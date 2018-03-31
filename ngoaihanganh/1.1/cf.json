@@ -1,0 +1,61 @@
+{
+  nav_items: [
+    {
+      name: "Thể Thao 247",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "",
+      provider_cf: [
+        {
+		  provider_id:"247",
+		  pid:"247",
+		  group_id:"247",
+          url: "http://app.thethao247.vn/api/newscat/id/8/page/{pgpage}",
+          page_var: "page",
+		  page_type: "normal,1",		  
+		  detail_url: "http://app.thethao247.vn/api/detail/id/{post.id}",
+		  related_url: "http://app.thethao247.vn/api/relate/id/{post.id}"
+        }
+      ]
+    },
+	{
+      name: "Bóng Đá 24H",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "",
+      provider_cf: [
+        {
+		  provider_id:"bongda24h",
+		  pid:"bongda24h",
+		  group_id:"bongda24h",
+          url: "http://apps.bongda24h.vn/webservices/Bongda24h_vs2.svc/GetArticleListByCatId/172,{pgpage},10,358240054339874,bongda24h,Android,1_6,0,16fbcd1450a7651a4896d947ec0a0b91",
+          page_var: "page",
+		  page_type: "normal,1",		  
+		  detail_url: "http://apps.bongda24h.vn/webservices/Bongda24h_vs2.svc/getArticle/{post.id},358240054339874,bongda24h,Android,1_6,0,6a22112cb960f959e9a8e9db5aec0fe9"
+        }
+      ]
+    },
+	{
+      name: "TT&VH",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "",
+      provider_cf: [
+        {
+		  provider_id:"vhtt",
+		  pid:"vhtt",
+		  group_id:"vhtt",
+          url: "http://apinews.yan.vn/ttvh/getList",
+		  url_method:"post",
+		  param_funcs: {
+			isNewer: "0",
+			catId="149"
+          },
+          page_var: "contentId",
+		  page_type: "custom,0",		  
+		  detail_url: "http://apinews.yan.vn/ttvh/getContent/{post.id}"
+        }
+      ]
+    }
+  ]
+}
