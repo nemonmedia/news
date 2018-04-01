@@ -6,33 +6,33 @@
       title: "title",
       desc: "intro",
       source: "link",
-	  thumbDomain:"https://media.thethao247.vn/",
-	  thumbSmall: "image",
-	  thumbMedium: "image",
-	  thumbBig: "image",
-	  dateFormat: "yyyy-MM-dd hh:mm:ss",
-	  dateTimeZone: "GMT+7",
-	  createdDate: "show_date",
-	  updatedDate: "show_date"
+      thumbDomain: "https://media.thethao247.vn/",
+      thumbSmall: "image",
+      thumbMedium: "image",
+      thumbBig: "image",
+      dateFormat: "yyyy-MM-dd hh:mm:ss",
+      dateTimeZone: "GMT+7",
+      createdDate: "show_date",
+      updatedDate: "show_date"
     },
-	detail: "$.content",
-	resolve_post:{
-		source: "$.link"
-	},
-	related_post_list: "$",
+    detail: "$.content",
+    resolve_post: {
+      source: "$.link"
+    },
+    related_post_list: "$",
     related_post: {
       id: "news_id",
       title: "title",
       desc: "intro",
       source: "link",
-	  thumbSmall: "image",
-	  thumbMedium: "image",
-	  thumbBig: "image",
-	  dateFormat: "yyyy-MM-dd hh:mm:ss",
-	  dateTimeZone: "GMT+7",
-	  createdDate: "show_date",
-	  updatedDate: "show_date"
-	}
+      thumbSmall: "image",
+      thumbMedium: "image",
+      thumbBig: "image",
+      dateFormat: "yyyy-MM-dd hh:mm:ss",
+      dateTimeZone: "GMT+7",
+      createdDate: "show_date",
+      updatedDate: "show_date"
+    }
   },
   bongda24h: {
     post_list: "$.ArtsList",
@@ -41,23 +41,23 @@
       title: "Title",
       desc: "Lead",
       source: "WebLink",
-	  thumbSmall: "IconUrl",
-	  thumbMedium: "IconUrl",
-	  thumbBig: "IconUrl",
-	  thumbResolve: "jReplace_http://_https://",
-	  dateFormat: "HH:mm dd/MM{year}",
-	  dateTimeZone: "GMT+7",
-	  createdDate: "PDate",
-	  updatedDate: ""
+      thumbSmall: "IconUrl",
+      thumbMedium: "IconUrl",
+      thumbBig: "IconUrl",
+      thumbResolve: "jReplace_http://_https://",
+      dateFormat: "HH:mm dd/MM{year}",
+      dateTimeZone: "GMT+7",
+      createdDate: "PDate",
+      updatedDate: ""
     },
-	detail: "$.Content",
-	resolve_detail_data:"jRemoveTags_head_h3_h2",
-	resolve_post:{
-		dateFormat: "dd/MM/yyyy hh:mm a",
-		dateTimeZone: "GMT+7",
-		createdDate: "PDate",
-		updatedDate: ""
-	}
+    detail: "$.Content",
+    resolve_detail_data: "jRemoveTags_head_h3_h2",
+    resolve_post: {
+      dateFormat: "dd/MM/yyyy hh:mm a",
+      dateTimeZone: "GMT+7",
+      createdDate: "PDate",
+      updatedDate: ""
+    }
   },
   vhtt: {
     post_list: "$.Data",
@@ -65,17 +65,61 @@
       id: "NewsId",
       title: "Title",
       source: "Link",
-	  thumbSmall: "Avatar",
-	  thumbMedium: "Avatar",
-	  thumbBig: "Avatar",
-	  dateFormat: "L13",
-	  dateTimeZone: "GMT+7",
-	  dateRegex:"(\\d+)",
-	  createdDate: "PublishDate",
-	  updatedDate: "LastModifyDate"
+      thumbSmall: "Avatar",
+      thumbMedium: "Avatar",
+      thumbBig: "Avatar",
+      dateFormat: "L13",
+      dateTimeZone: "GMT+7",
+      dateRegex: "(\\d+)",
+      createdDate: "PublishDate",
+      updatedDate: "LastModifyDate"
     },
-	next_page="$.Data[-1:].NewsId",
-	detail: "$.Data.Body",
-	detail_video_list:"$.Data.VideoUrl"
+    next_page: "$.Data[-1:].NewsId",
+    detail: "$.Data.Body",
+    detail_video_list: "$.Data.VideoUrl"
+  },
+  vne_tt: {
+    post_list: "$.data.1002580",
+    post: {
+      id: "article_id",
+      title: "title",
+      desc: "lead",
+      source: "share_url",
+      thumbSmall: "thumbnail_url",
+      thumbMedium: "thumbnail_url",
+      thumbBig: "thumbnail_url",
+      dateFormat: "L10",
+      createdDate: "publish_time",
+      updatedDate: "update_time"
+    },
+    detail: "$.data.content",
+    detail_image_list: "$.data.photos",
+    detail_image: {
+      id: "photo_id",
+      url: "thumbnail_url",
+      width: 0,
+      height: 0,
+      desc: "caption"
+    },
+    video_objs: "$.data.list_video",
+    detail_video: {
+      id: "video_id",
+      url: "url",
+      thumb: "thumbnail_url",
+      desc: "caption"
+    },
+    related_post_list: "$.data.list_reference_seemore",
+    related_post: {
+      id: "article_id",
+      title: "title",
+      desc: "lead",
+      source: "share_url",
+      thumbSmall: "thumbnail_url",
+      thumbMedium: "thumbnail_url",
+      thumbBig: "thumbnail_url",
+      dateFormat: "L10",
+      createdDate: "publish_time",
+      updatedDate: "update_time"
+    }
   }
 }
