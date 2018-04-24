@@ -1,0 +1,31 @@
+{
+  ttp_home: {
+    post_list: "$.data.list",
+    post: {
+      id: "pid",
+      title: "post_title",
+      desc: "post_description",
+      source: "source",
+	  thumbSmall: "progressive_image_250x156",
+	  thumbMedium: "progressive_image_320x180",
+	  thumbBig: "progressive_image_660",
+	  dateFormat: "L10",
+	  createdDate: "ctime",
+	  updatedDate: ""
+    },
+	detail: "$.data.post.post_content",
+	related_post_list: "$.data.relation",
+    related_post: {
+      id: "pid",
+      title: "post_title",
+      desc: "post_description",
+      source: "source",
+	  thumbSmall: "progressive_image_250x156",
+	  thumbMedium: "progressive_image_320x180",
+	  thumbBig: "progressive_image_660",
+	  dateFormat: "L10",
+	  createdDate: "ctime",
+	  updatedDate: ""
+	}
+  }
+}

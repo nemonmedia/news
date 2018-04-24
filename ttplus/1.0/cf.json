@@ -1,0 +1,244 @@
+{
+  nav_items: [
+    {
+      name: "Đọc nhiều",
+      type: 0,
+      use_char_icon: true,
+      res_icon_name: "cat_thoi_su",
+      provider_cf: [
+        {
+          provider_id: "tn_doc_nhieu",
+          pid: "ttp_home",
+          group_id: "doc_nhieu",
+          url: "https://tuoitreplus.com/api/mobile?key=9V14UP0iHfv4t3eBNv&type=postsTop&limit=10",
+          param_funcs: {
+            deviceId: "getDeviceId"
+          },
+          page_var: "page",
+          page_type: "normal,1",
+          detail_url: "https://tuoitreplus.com/api/mobile?key=9V14UP0iHfv4t3eBNv&type=post",
+          detail_params: {
+            deviceId: "getDeviceId",
+            pid: "post.id"
+          }
+        }
+      ]
+    },
+    {
+      name: "Trang chủ",
+      type: 0,
+      use_char_icon: true,
+      res_icon_name: "cat_home",
+      provider_cf: [
+        {
+          provider_id: "tn_trang_chu",
+          pid: "ttp_home",
+          group_id: "trang_chu",
+          url: "https://tuoitreplus.com/api/mobile?key=9V14UP0iHfv4t3eBNv&type=postsNewest&limit=10",
+          param_funcs: {
+            deviceId: "getDeviceId"
+          },
+          page_var: "page",
+          page_type: "normal,1",
+          detail_url: "https://tuoitreplus.com/api/mobile?key=9V14UP0iHfv4t3eBNv&type=post",
+          detail_params: {
+            deviceId: "getDeviceId",
+            pid: "post.id"
+          }
+        }
+      ]
+    },
+    {
+      name: "Đời sống",
+      type: 0,
+      use_char_icon: true,
+      res_icon_name: "cat_gia_dinh",
+      provider_cf: [
+        {
+          provider_id: "tn_doi_song",
+          pid: "ttp_home",
+          group_id: "doi_song",
+          url: "https://tuoitreplus.com/api/mobile?key=9V14UP0iHfv4t3eBNv&type=postsCategory&cateId=1&limit=10",
+          param_funcs: {
+            deviceId: "getDeviceId"
+          },
+          page_var: "page",
+          page_type: "normal,1",
+          detail_url: "https://tuoitreplus.com/api/mobile?key=9V14UP0iHfv4t3eBNv&type=post",
+          detail_params: {
+            deviceId: "getDeviceId",
+            pid: "post.id"
+          }
+        }
+      ]
+    },
+	{
+      name: "Sức khỏe",
+      type: 0,
+      use_char_icon: true,
+      res_icon_name: "cat_suc_khoe",
+      provider_cf: [
+        {
+          provider_id: "tn_suc_khoe",
+          pid: "ttp_home",
+          group_id: "doi_song",
+          url: "https://tuoitreplus.com/api/mobile?key=9V14UP0iHfv4t3eBNv&type=postsCategory&cateId=31&limit=10",
+          param_funcs: {
+            deviceId: "getDeviceId"
+          },
+          page_var: "page",
+          page_type: "normal,1",
+          detail_url: "https://tuoitreplus.com/api/mobile?key=9V14UP0iHfv4t3eBNv&type=post",
+          detail_params: {
+            deviceId: "getDeviceId",
+            pid: "post.id"
+          }
+        }
+      ]
+    },
+	{
+      name: "Du lịch",
+      type: 0,
+      use_char_icon: true,
+      res_icon_name: "cat_du_lich",
+      provider_cf: [
+        {
+          provider_id: "tn_du_lich",
+          pid: "ttp_home",
+          group_id: "doi_song",
+          url: "https://tuoitreplus.com/api/mobile?key=9V14UP0iHfv4t3eBNv&type=postsCategory&cateId=2&limit=10",
+          param_funcs: {
+            deviceId: "getDeviceId"
+          },
+          page_var: "page",
+          page_type: "normal,1",
+          detail_url: "https://tuoitreplus.com/api/mobile?key=9V14UP0iHfv4t3eBNv&type=post",
+          detail_params: {
+            deviceId: "getDeviceId",
+            pid: "post.id"
+          }
+        }
+      ]
+    },
+	{
+      name: "Thời trang",
+      type: 0,
+      use_char_icon: true,
+      res_icon_name: "cat_thoi_trang",
+      provider_cf: [
+        {
+          provider_id: "tn_thoi_trang",
+          pid: "ttp_home",
+          group_id: "thoi_trang",
+          url: "https://tuoitreplus.com/api/mobile?key=9V14UP0iHfv4t3eBNv&type=postsCategory&cateId=4&limit=10",
+          param_funcs: {
+            deviceId: "getDeviceId"
+          },
+          page_var: "page",
+          page_type: "normal,1",
+          detail_url: "https://tuoitreplus.com/api/mobile?key=9V14UP0iHfv4t3eBNv&type=post",
+          detail_params: {
+            deviceId: "getDeviceId",
+            pid: "post.id"
+          }
+        }
+      ]
+    },
+	{
+      name: "Giải trí",
+      type: 0,
+      use_char_icon: true,
+      res_icon_name: "cat_giai_tri",
+      provider_cf: [
+        {
+          provider_id: "ttp_giai_tri",
+          pid: "ttp_home",
+          group_id: "giai_tri",
+          url: "https://tuoitreplus.com/api/mobile?key=9V14UP0iHfv4t3eBNv&type=postsCategory&cateId=12&limit=10",
+          param_funcs: {
+            deviceId: "getDeviceId"
+          },
+          page_var: "page",
+          page_type: "normal,1",
+          detail_url: "https://tuoitreplus.com/api/mobile?key=9V14UP0iHfv4t3eBNv&type=post",
+          detail_params: {
+            deviceId: "getDeviceId",
+            pid: "post.id"
+          }
+        }
+      ]
+    },
+	{
+      name: "Xã hội",
+      type: 0,
+      use_char_icon: true,
+      res_icon_name: "cat_xa_hoi",
+      provider_cf: [
+        {
+          provider_id: "ttp_xa_hoi",
+          pid: "ttp_home",
+          group_id: "xa_hoi",
+          url: "https://tuoitreplus.com/api/mobile?key=9V14UP0iHfv4t3eBNv&type=postsCategory&cateId=7&limit=10",
+          param_funcs: {
+            deviceId: "getDeviceId"
+          },
+          page_var: "page",
+          page_type: "normal,1",
+          detail_url: "https://tuoitreplus.com/api/mobile?key=9V14UP0iHfv4t3eBNv&type=post",
+          detail_params: {
+            deviceId: "getDeviceId",
+            pid: "post.id"
+          }
+        }
+      ]
+    },
+	{
+      name: "Công nghệ",
+      type: 0,
+      use_char_icon: true,
+      res_icon_name: "cat_so_hoa",
+      provider_cf: [
+        {
+          provider_id: "ttp_so_hoa",
+          pid: "ttp_home",
+          group_id: "so_hoa",
+          url: "https://tuoitreplus.com/api/mobile?key=9V14UP0iHfv4t3eBNv&type=postsCategory&cateId=18&limit=10",
+          param_funcs: {
+            deviceId: "getDeviceId"
+          },
+          page_var: "page",
+          page_type: "normal,1",
+          detail_url: "https://tuoitreplus.com/api/mobile?key=9V14UP0iHfv4t3eBNv&type=post",
+          detail_params: {
+            deviceId: "getDeviceId",
+            pid: "post.id"
+          }
+        }
+      ]
+    },
+	{
+      name: "Thể thao",
+      type: 0,
+      use_char_icon: true,
+      res_icon_name: "cat_the_thao",
+      provider_cf: [
+        {
+          provider_id: "ttp_the_thao",
+          pid: "ttp_home",
+          group_id: "the_thao",
+          url: "https://tuoitreplus.com/api/mobile?key=9V14UP0iHfv4t3eBNv&type=postsCategory&cateId=19&limit=10",
+          param_funcs: {
+            deviceId: "getDeviceId"
+          },
+          page_var: "page",
+          page_type: "normal,1",
+          detail_url: "https://tuoitreplus.com/api/mobile?key=9V14UP0iHfv4t3eBNv&type=post",
+          detail_params: {
+            deviceId: "getDeviceId",
+            pid: "post.id"
+          }
+        }
+      ]
+    }
+  ]
+}
