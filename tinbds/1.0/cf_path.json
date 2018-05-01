@@ -1,0 +1,38 @@
+{
+  bds_home: {
+    post_list: "$.posts",
+    post: {
+      id: "id",
+      title: "title_plain",
+      desc: "excerpt",
+      source: "url",
+	  thumbSmall: "attachments[0].images.full.url",
+	  thumbMedium: "attachments[0].images.full.url",
+	  thumbBig: "attachments[0].images.full.url",
+	  dateFormat: "yyyy-MM-dd HH:mm:ss",
+	  dateTimeZone:"GMT+7",
+	  createdDate: "modified",
+	  updatedDate: "",
+	  detail:"content",
+	  resolve_detail_data:"jRemoveTags_ul_style_form"
+    }
+  },
+  bds_phong_thuy: {
+    post_list: "$.posts",
+    post: {
+      id: "id",
+      title: "title_plain",
+      desc: "",
+      source: "url",
+	  thumbSmall: "attachments[0].images.full.url",
+	  thumbMedium: "attachments[0].images.full.url",
+	  thumbBig: "attachments[0].images.full.url",
+	  dateFormat: "yyyy-MM-dd HH:mm:ss",
+	  dateTimeZone:"GMT+7",
+	  createdDate: "modified",
+	  updatedDate: "",
+	  detail:"content",
+	  resolve_detail_data:"jRemoveTags_ul_style_form"
+    }
+  }
+}

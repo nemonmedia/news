@@ -1,0 +1,84 @@
+{
+  nav_items: [
+    {
+      name: "Tin tức",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "cat_thoi_su",
+      provider_cf: [
+        {
+		  provider_id:"bds_home",
+		  pid:"bds_home",
+		  group_id:"trang_chu",
+          url: "https://kenhthongtinbds.com/api/get_category_posts/?id=5&",
+		  page_var:"page",
+		  page_type:"normal,1"
+        }
+      ]
+    },
+	{
+      name: "Dự án",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "cat_bat_dong_san",
+      provider_cf: [
+        {
+		  provider_id:"bds_du_an",
+		  pid:"bds_home",
+		  group_id:"trang_chu",
+          url: "https://kenhthongtinbds.com/api/get_category_posts/?id=6&",
+		  page_var:"page",
+		  page_type:"normal,1"
+        }
+      ]
+    },
+	{
+      name: "Nhà đất bán",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "cat_gia_dinh",
+      provider_cf: [
+        {
+		  provider_id:"bds_nha_dat_ban",
+		  pid:"bds_home",
+		  group_id:"trang_chu",
+          url: "https://kenhthongtinbds.com/api/get_category_posts/?id=3&",
+		  page_var:"page",
+		  page_type:"normal,1"
+        }
+      ]
+    },
+	{
+      name: "Tài chính - chứng khoán",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "cat_chuyen_nhuong",
+      provider_cf: [
+        {
+		  provider_id:"bds_tcck",
+		  pid:"bds_home",
+		  group_id:"trang_chu",
+          url: "https://kenhthongtinbds.com/api/get_category_posts/?id=86&",
+		  page_var:"page",
+		  page_type:"normal,1"
+        }
+      ]
+    },
+	{
+      name: "Phong thủy",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "cat_phong_thuy",
+      provider_cf: [
+        {
+		  provider_id:"bds_phong_thuy",
+		  pid:"bds_phong_thuy",
+		  group_id:"trang_chu",
+          url: "https://kenhthongtinbds.com/api/get_category_posts/?id=7&",
+		  page_var:"page",
+		  page_type:"normal,1"
+        }
+      ]
+    }
+  ]
+}
