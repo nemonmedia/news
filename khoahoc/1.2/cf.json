@@ -1,0 +1,194 @@
+{
+  nav_items: [
+  {
+      name: "f_search",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "",
+      provider_cf: [
+        {
+		  provider_id:"f_search",
+		  pid:"kh_home",
+		  group_id:"f_search",
+          url: "http://api.chiennn.me/mobile/search?access_key=4297f44b13955235245b2497399d7a93&type=post&",
+		  param_funcs: {
+            s: "pb_keyword"
+          },
+		  page_var:"page",
+		  page_type: "normal,1",
+		  detail_url: "http://api.chiennn.me/mobile/post/{post.id}?access_key=4297f44b13955235245b2497399d7a93"
+        }
+      ]
+    },
+    {
+      name: "Trang chủ",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "cat_home",
+      provider_cf: [
+        {
+		  provider_id:"kh_home",
+		  pid:"kh_home",
+		  group_id:"home",
+          url: "http://api.chiennn.me/mobile/post?access_key=4297f44b13955235245b2497399d7a93&limit=20&",
+		  page_var:"page",
+		  page_type: "normal,1",
+		  detail_url: "http://api.chiennn.me/mobile/post/{post.id}?access_key=4297f44b13955235245b2497399d7a93"
+        }
+      ]
+    },
+	{
+      name: "Vũ trụ",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "cat_vu_tru",
+      provider_cf: [
+        {
+		  provider_id:"kh_vu_tru",
+		  pid:"kh_home",
+		  group_id:"vu_tru",
+          url: "http://api.chiennn.me/mobile/post?access_key=4297f44b13955235245b2497399d7a93&limit=20&&filter=[{\"column\":\"cate_id\",\"operator\":\"matches_any\",\"value\":\"129\"}]",
+		  page_var:"page",
+		  page_type: "normal,1",
+		  detail_url: "http://api.chiennn.me/mobile/post/{post.id}?access_key=4297f44b13955235245b2497399d7a93"
+        }
+      ]
+    },
+	{
+      name: "Đại dương",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "cat_tho_lan",
+      provider_cf: [
+        {
+		  provider_id:"kh_dai_duong",
+		  pid:"kh_home",
+		  group_id:"dai_duong",
+          url: "http://api.chiennn.me/mobile/post?access_key=4297f44b13955235245b2497399d7a93&limit=20&&filter=[{\"column\":\"cate_id\",\"operator\":\"matches_any\",\"value\":\"128\"}]",
+		  page_var:"page",
+		  page_type: "normal,1",
+		  detail_url: "http://api.chiennn.me/mobile/post/{post.id}?access_key=4297f44b13955235245b2497399d7a93"
+        }
+      ]
+    },
+	{
+      name: "Khảo cổ",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "cat_khao_co",
+      provider_cf: [
+        {
+		  provider_id:"kh_khao_co",
+		  pid:"kh_home",
+		  group_id:"khao_co",
+          url: "http://api.chiennn.me/mobile/post?access_key=4297f44b13955235245b2497399d7a93&limit=20&&filter=[{\"column\":\"cate_id\",\"operator\":\"matches_any\",\"value\":\"127\"}]",
+		  page_var:"page",
+		  page_type: "normal,1",
+		  detail_url: "http://api.chiennn.me/mobile/post/{post.id}?access_key=4297f44b13955235245b2497399d7a93"
+        }
+      ]
+    },
+	{
+      name: "Sinh học",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "cat_sinh_hoc",
+      provider_cf: [
+        {
+		  provider_id:"kh_sinh_hoc",
+		  pid:"kh_home",
+		  group_id:"sinh_hoc",
+          url: "http://api.chiennn.me/mobile/post?access_key=4297f44b13955235245b2497399d7a93&limit=20&&filter=[{\"column\":\"cate_id\",\"operator\":\"matches_any\",\"value\":\"126\"}]",
+		  page_var:"page",
+		  page_type: "normal,1",
+		  detail_url: "http://api.chiennn.me/mobile/post/{post.id}?access_key=4297f44b13955235245b2497399d7a93"
+        }
+      ]
+    },
+	{
+      name: "AI",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "cat_ai",
+      provider_cf: [
+        {
+		  provider_id:"kh_ai",
+		  pid:"kh_home",
+		  group_id:"ai",
+          url: "http://api.chiennn.me/mobile/post?access_key=4297f44b13955235245b2497399d7a93&limit=20&&filter=[{\"column\":\"cate_id\",\"operator\":\"matches_any\",\"value\":\"125\"}]",
+		  page_var:"page",
+		  page_type: "normal,1",
+		  detail_url: "http://api.chiennn.me/mobile/post/{post.id}?access_key=4297f44b13955235245b2497399d7a93"
+        }
+      ]
+    },
+	{
+      name: "Phát minh",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "cat_sang_tao",
+      provider_cf: [
+        {
+		  provider_id:"kh_sang_tao",
+		  pid:"kh_home",
+		  group_id:"sang_tao",
+          url: "http://api.chiennn.me/mobile/post?access_key=4297f44b13955235245b2497399d7a93&limit=20&&filter=[{\"column\":\"cate_id\",\"operator\":\"matches_any\",\"value\":\"124\"}]",
+		  page_var:"page",
+		  page_type: "normal,1",
+		  detail_url: "http://api.chiennn.me/mobile/post/{post.id}?access_key=4297f44b13955235245b2497399d7a93"
+        }
+      ]
+    },
+	{
+      name: "Máy tính",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "cat_may_tinh",
+      provider_cf: [
+        {
+		  provider_id:"kh_may_tinh",
+		  pid:"kh_home",
+		  group_id:"may_tinh",
+          url: "http://api.chiennn.me/mobile/post?access_key=4297f44b13955235245b2497399d7a93&limit=20&&filter=[{\"column\":\"cate_id\",\"operator\":\"matches_any\",\"value\":\"123\"}]",
+		  page_var:"page",
+		  page_type: "normal,1",
+		  detail_url: "http://api.chiennn.me/mobile/post/{post.id}?access_key=4297f44b13955235245b2497399d7a93"
+        }
+      ]
+    },
+	{
+      name: "Công nghệ",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "cat_khoa_hoc",
+      provider_cf: [
+        {
+		  provider_id:"kh_khoa_hoc",
+		  pid:"kh_home",
+		  group_id:"khoa_hoc",
+          url: "http://api.chiennn.me/mobile/post?access_key=4297f44b13955235245b2497399d7a93&limit=20&&filter=[{\"column\":\"cate_id\",\"operator\":\"matches_any\",\"value\":\"122\"}]",
+		  page_var:"page",
+		  page_type: "normal,1",
+		  detail_url: "http://api.chiennn.me/mobile/post/{post.id}?access_key=4297f44b13955235245b2497399d7a93"
+        }
+      ]
+    },
+	{
+      name: "Mobile",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "cat_so_hoa",
+      provider_cf: [
+        {
+		  provider_id:"kh_so_hoa",
+		  pid:"kh_home",
+		  group_id:"so_hoa",
+          url: "http://api.chiennn.me/mobile/post?access_key=4297f44b13955235245b2497399d7a93&limit=20&&filter=[{\"column\":\"cate_id\",\"operator\":\"matches_any\",\"value\":\"115\"}]",
+		  page_var:"page",
+		  page_type: "normal,1",
+		  detail_url: "http://api.chiennn.me/mobile/post/{post.id}?access_key=4297f44b13955235245b2497399d7a93"
+        }
+      ]
+    }
+  ]
+}
