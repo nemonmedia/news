@@ -1,0 +1,48 @@
+{
+  f_search: {
+    post_list: "$.data.stories",
+    post: {
+      id: "storyid",
+      title: "storytitle",
+      desc: "",
+      source: "",
+	  thumbSmall: "thumbnail",
+	  thumbMedium: "thumbnail",
+	  thumbBig: "thumbnail",
+	  dateFormat: "L10",
+	  createdDate: "storydate",
+	  updatedDate: ""
+    },
+	detail: "$.data.htmlcontent",
+	video_objs:"$.data.videos",
+	detail_video: {
+		id: "video_id",
+		url:"video_url",
+		thumb:"video_thumb",
+		desc:"caption"
+	}
+  },
+  tn_home: {
+    post_list: "$.data.list_post",
+    post: {
+      id: "storyid",
+      title: "storytitle",
+      desc: "",
+      source: "",
+	  thumbSmall: "thumbnail",
+	  thumbMedium: "thumbnail",
+	  thumbBig: "thumbnail",
+	  dateFormat: "L10",
+	  createdDate: "storydate",
+	  updatedDate: ""
+    },
+	detail: "$.data.htmlcontent",
+	video_objs:"$.data.videos",
+	detail_video: {
+		id: "video_id",
+		url:"video_url",
+		thumb:"video_thumb",
+		desc:"caption"
+	}
+  }
+}
