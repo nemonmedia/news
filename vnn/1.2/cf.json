@@ -1,0 +1,262 @@
+{
+  nav_items: [
+   {
+      name: "f_search",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "",
+      provider_cf: [
+        {
+		  provider_id:"f_search",
+		  pid:"vnn_home",
+		  group_id:"f_search",
+          url: "http://vietnamnet.vn/jsx/search/?c=&",
+		  param_funcs: {
+            k: "pb_keyword"
+          },
+          page_var: "p",
+		  page_type: "normal,1",
+		  detail_url: "http://vietnamnet-a.1api.vn/jsx/detail/?a={post.id}"
+        }
+      ]
+    },
+    {
+      name: "Trang chủ",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "cat_home",
+      provider_cf: [
+        {
+		  provider_id:"trang_chu",
+		  pid:"vnn_home",
+		  group_id:"trang_chu",
+          url: "http://vietnamnet.vn/jsx/category/?c=tin-noi-bat&",
+          page_var: "p",
+		  page_type: "normal,1",
+		  detail_url: "http://vietnamnet-a.1api.vn/jsx/detail/?a={post.id}"
+        }
+      ]
+    },
+	{
+      name: "Kinh doanh",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "cat_kinh_doanh",
+      provider_cf: [
+        {
+		  provider_id:"kinh_doanh",
+		  pid:"vnn_home",
+		  group_id:"kinh_doanh",
+          url: "http://vietnamnet.vn/jsx/category/?c=kinh-doanh&",
+          page_var: "p",
+		  page_type: "normal,1",
+		  detail_url: "http://vietnamnet-a.1api.vn/jsx/detail/?a={post.id}"
+        }
+      ]
+    },
+	{
+      name: "Thế giới",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "cat_the_gioi",
+      provider_cf: [
+        {
+		  provider_id:"the_gioi",
+		  pid:"vnn_home",
+		  group_id:"the_gioi",
+          url: "http://vietnamnet.vn/jsx/category/?c=the-gioi&",
+          page_var: "p",
+		  page_type: "normal,1",
+		  detail_url: "http://vietnamnet-a.1api.vn/jsx/detail/?a={post.id}"
+        }
+      ]
+    },
+	{
+      name: "Giáo dục",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "cat_giao_duc",
+      provider_cf: [
+        {
+		  provider_id:"giao_duc",
+		  pid:"vnn_home",
+		  group_id:"giao_duc",
+          url: "http://vietnamnet.vn/jsx/category/?c=giao-duc&",
+          page_var: "p",
+		  page_type: "normal,1",
+		  detail_url: "http://vietnamnet-a.1api.vn/jsx/detail/?a={post.id}"
+        }
+      ]
+    },
+	{
+      name: "Đời sống",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "cat_gia_dinh",
+      provider_cf: [
+        {
+		  provider_id:"doi_song",
+		  pid:"vnn_home",
+		  group_id:"doi_song",
+          url: "http://vietnamnet.vn/jsx/category/?c=doi-song&",
+          page_var: "p",
+		  page_type: "normal,1",
+		  detail_url: "http://vietnamnet-a.1api.vn/jsx/detail/?a={post.id}"
+        }
+      ]
+    },
+	{
+      name: "Pháp luật",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "cat_phap_luat",
+      provider_cf: [
+        {
+		  provider_id:"phap_luat",
+		  pid:"vnn_home",
+		  group_id:"phap_luat",
+          url: "http://vietnamnet.vn/jsx/category/?c=phap-luat&",
+          page_var: "p",
+		  page_type: "normal,1",
+		  detail_url: "http://vietnamnet-a.1api.vn/jsx/detail/?a={post.id}"
+        }
+      ]
+    },
+	{
+      name: "Giải trí",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "cat_giai_tri",
+      provider_cf: [
+        {
+		  provider_id:"giai_tri",
+		  pid:"vnn_home",
+		  group_id:"giai_tri",
+          url: "http://vietnamnet.vn/jsx/category/?c=giai-tri&",
+          page_var: "p",
+		  page_type: "normal,1",
+		  detail_url: "http://vietnamnet-a.1api.vn/jsx/detail/?a={post.id}"
+        }
+      ]
+    },
+	{
+      name: "Thể thao",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "cat_the_thao",
+      provider_cf: [
+        {
+		  provider_id:"the_thao",
+		  pid:"vnn_home",
+		  group_id:"the_thao",
+          url: "http://vietnamnet.vn/jsx/category/?c=the-thao&",
+          page_var: "p",
+		  page_type: "normal,1",
+		  detail_url: "http://vietnamnet-a.1api.vn/jsx/detail/?a={post.id}"
+        }
+      ]
+    },
+	{
+      name: "Công nghệ",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "cat_so_hoa",
+      provider_cf: [
+        {
+		  provider_id:"cong_nghe",
+		  pid:"vnn_home",
+		  group_id:"cong_nghe",
+          url: "http://vietnamnet.vn/jsx/category/?c=cong-nghe&",
+          page_var: "p",
+		  page_type: "normal,1",
+		  detail_url: "http://vietnamnet-a.1api.vn/jsx/detail/?a={post.id}"
+        }
+      ]
+    },
+	{
+      name: "Sức khỏe",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "cat_suc_khoe",
+      provider_cf: [
+        {
+		  provider_id:"suc_khoe",
+		  pid:"vnn_home",
+		  group_id:"suc_khoe",
+          url: "http://vietnamnet.vn/jsx/category/?c=suc-khoe&",
+          page_var: "p",
+		  page_type: "normal,1",
+		  detail_url: "http://vietnamnet-a.1api.vn/jsx/detail/?a={post.id}"
+        }
+      ]
+    },
+	{
+      name: "Bất động sản",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "cat_bat_dong_san",
+      provider_cf: [
+        {
+		  provider_id:"bds",
+		  pid:"vnn_home",
+		  group_id:"bds",
+          url: "http://vietnamnet.vn/jsx/category/?c=bat-dong-san&",
+          page_var: "p",
+		  page_type: "normal,1",
+		  detail_url: "http://vietnamnet-a.1api.vn/jsx/detail/?a={post.id}"
+        }
+      ]
+    },
+	{
+      name: "Bạn đọc",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "cat_tam_su",
+      provider_cf: [
+        {
+		  provider_id:"ban_doc",
+		  pid:"vnn_home",
+		  group_id:"ban_doc",
+          url: "http://vietnamnet.vn/jsx/category/?c=ban-doc&",
+          page_var: "p",
+		  page_type: "normal,1",
+		  detail_url: "http://vietnamnet-a.1api.vn/jsx/detail/?a={post.id}"
+        }
+      ]
+    },
+	{
+      name: "Cộng đồng",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "cat_cong_dong",
+      provider_cf: [
+        {
+		  provider_id:"cong_dong",
+		  pid:"vnn_home",
+		  group_id:"cong_dong",
+          url: "http://vietnamnet.vn/jsx/category/?c=cong-dong&",
+          page_var: "p",
+		  page_type: "normal,1",
+		  detail_url: "http://vietnamnet-a.1api.vn/jsx/detail/?a={post.id}"
+        }
+      ]
+    },
+	{
+      name: "Multimedia",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "cat_video",
+      provider_cf: [
+        {
+		  provider_id:"mtm",
+		  pid:"vnn_home",
+		  group_id:"mtm",
+          url: "http://vietnamnet.vn/jsx/category/?c=multimedia&",
+          page_var: "p",
+		  page_type: "normal,1",
+		  detail_url: "http://vietnamnet-a.1api.vn/jsx/detail/?a={post.id}"
+        }
+      ]
+    }
+  ]
+}
