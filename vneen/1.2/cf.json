@@ -1,0 +1,109 @@
+{
+  nav_items: [
+  {
+      name: "f_search",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "",
+      provider_cf: [
+        {
+		  provider_id:"f_search",
+		  pid:"vnee_home",
+		  group_id:"f_search",
+          url: "http://api.chiennn.me/mobile/search?access_key=4297f44b13955235245b2497399d7a93&type=post&filter=[{\"column\":\"website_id\",\"operator\":\"matches_any\",\"value\":\"39\"}]",
+		  param_funcs: {
+            s: "pb_keyword"
+          },
+		  page_var:"page",
+		  page_type: "normal,1",
+		  detail_url: "http://api.chiennn.me/mobile/post/{post.id}?access_key=4297f44b13955235245b2497399d7a93"
+        }
+      ]
+    },
+    {
+      name: "Home",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "cat_home",
+      provider_cf: [
+        {
+		  provider_id:"home",
+		  pid:"vnee_home",
+		  group_id:"home",
+          url: "http://api.chiennn.me/mobile/post?access_key=4297f44b13955235245b2497399d7a93&limit=20&filter=[{\"column\":\"website_id\",\"operator\":\"matches_any\",\"value\":\"39\"}]",
+		  page_var:"page",
+		  page_type: "normal,1",
+		  detail_url: "http://api.chiennn.me/mobile/post/{post.id}?access_key=4297f44b13955235245b2497399d7a93"
+        }
+      ]
+    },
+	{
+      name: "News",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "cat_thoi_su",
+      provider_cf: [
+        {
+		  provider_id:"su-kien",
+		  pid:"vnee_home",
+		  group_id:"su-kien",
+          url: "http://api.chiennn.me/mobile/post?access_key=4297f44b13955235245b2497399d7a93&limit=20&&filter=[{\"column\":\"cate_id\",\"operator\":\"matches_any\",\"value\":\"148\"}]",
+		  page_var:"page",
+		  page_type: "normal,1",
+		  detail_url: "http://api.chiennn.me/mobile/post/{post.id}?access_key=4297f44b13955235245b2497399d7a93"
+        }
+      ]
+    },
+	{
+      name: "Business",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "cat_kinh_doanh",
+      provider_cf: [
+        {
+		  provider_id:"kinh-doanh",
+		  pid:"vnee_home",
+		  group_id:"kinh-doanh",
+          url: "http://api.chiennn.me/mobile/post?access_key=4297f44b13955235245b2497399d7a93&limit=20&&filter=[{\"column\":\"cate_id\",\"operator\":\"matches_any\",\"value\":\"149\"}]",
+		  page_var:"page",
+		  page_type: "normal,1",
+		  detail_url: "http://api.chiennn.me/mobile/post/{post.id}?access_key=4297f44b13955235245b2497399d7a93"
+        }
+      ]
+    },
+	{
+      name: "Travel & Life",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "cat_du_lich",
+      provider_cf: [
+        {
+		  provider_id:"dulich",
+		  pid:"vnee_home",
+		  group_id:"dulich",
+          url: "http://api.chiennn.me/mobile/post?access_key=4297f44b13955235245b2497399d7a93&limit=20&&filter=[{\"column\":\"cate_id\",\"operator\":\"matches_any\",\"value\":\"150\"}]",
+		  page_var:"page",
+		  page_type: "normal,1",
+		  detail_url: "http://api.chiennn.me/mobile/post/{post.id}?access_key=4297f44b13955235245b2497399d7a93"
+        }
+      ]
+    },
+	{
+      name: "World",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "cat_the_gioi",
+      provider_cf: [
+        {
+		  provider_id:"thegioi",
+		  pid:"vnee_home",
+		  group_id:"thegioi",
+          url: "http://api.chiennn.me/mobile/post?access_key=4297f44b13955235245b2497399d7a93&limit=20&&filter=[{\"column\":\"cate_id\",\"operator\":\"matches_any\",\"value\":\"152\"}]",
+		  page_var:"page",
+		  page_type: "normal,1",
+		  detail_url: "http://api.chiennn.me/mobile/post/{post.id}?access_key=4297f44b13955235245b2497399d7a93"
+        }
+      ]
+    }
+  ]
+}
