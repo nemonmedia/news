@@ -193,6 +193,7 @@
 	{
       name: "Du lịch",
       type: 0,
+	enabled: false,
       use_char_icon: true,
 	  res_icon_name: "cat_du_lich",
       provider_cf: [
