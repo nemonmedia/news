@@ -1,0 +1,18 @@
+{
+  zing_home: {
+    post_list: "$.data.rows",
+    post: {
+      id: "post_id",
+      title: "post_title",
+      desc: "description",
+      source: "source_url",
+	  thumbSmall: "images.thumb_images.342x270",
+	  thumbMedium: "images.thumb_images.342x270",
+	  thumbBig: "images.source_url",
+	  dateFormat: "L10",
+	  createdDate: "created_date",
+	  updatedDate: ""
+    },
+	detail: "$.data.post_content"
+  }
+}
