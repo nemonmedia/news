@@ -20,7 +20,7 @@
       name: "Nên đọc",
       type: 0,
       use_char_icon: true,
-      res_icon_name: "cat_tin_tuc",
+      res_icon_name: "cat_thoi_su",
       provider_cf: [
         {
           provider_id: "ncdt_nen_doc",
@@ -88,30 +88,13 @@
       name: "Chuyên đề",
       type: 0,
       use_char_icon: true,
-      res_icon_name: "cat_",
-      provider_cf: [
-        {
-          provider_id: "ncdt_nv",
-          pid: "ncdt",
-          group_id: "nv",
-          url: "http://serviceapps.nhipcaudautu.vn/galaxyservice.svc/subjectdetailByFolder/30069-{pgpage}",
-          page_var: "page",
-          page_type: "normal,1",
-          detail_url: "http://serviceapps.nhipcaudautu.vn/galaxyservice.svc/subjectdetail/{post.id}"
-        }
-      ]
-    },
-    {
-      name: "Chuyên đề",
-      type: 0,
-      use_char_icon: true,
       res_icon_name: "cat_tam_su",
       provider_cf: [
         {
-          provider_id: "bds_chuyen_de",
+          provider_id: "ncdt_nd",
           pid: "ncdt",
-          group_id: "chuyen_de",
-          url: "http://serviceapps.nhipcaudautu.vn/galaxyservice.svc/subjectdetailByFolder/30141-{pgpage}",
+          group_id: "cd",
+          url: "http://serviceapps.nhipcaudautu.vn/galaxyservice.svc/subjectdetailByFolder/30069-{pgpage}",
           page_var: "page",
           page_type: "normal,1",
           detail_url: "http://serviceapps.nhipcaudautu.vn/galaxyservice.svc/subjectdetail/{post.id}"
