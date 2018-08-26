@@ -6,15 +6,15 @@
       title: "title_plain",
       desc: "excerpt",
       source: "url",
-	  thumbSmall: "attachments[0].url",
-	  thumbMedium: "attachments[0].url",
-	  thumbBig: "attachments[0].url",
-	  dateFormat: "yyyy-MM-dd HH:mm:ss",
-	  dateTimeZone:"GMT+7",
-	  createdDate: "modified",
-	  updatedDate: "",
-	  detail:"content",
-	  resolve_detail_data:"jRemoveTags_ul_style_form"
+      thumbSmall: "attachments[0].url",
+      thumbMedium: "attachments[0].url",
+      thumbBig: "attachments[0].url",
+      dateFormat: "yyyy-MM-dd HH:mm:ss",
+      dateTimeZone: "GMT+7",
+      createdDate: "modified",
+      updatedDate: "",
+      detail: "content",
+      resolve_detail_data: "jRemoveTags_ul_style_form"
     }
   },
   bds_phong_thuy: {
@@ -24,15 +24,51 @@
       title: "title_plain",
       desc: "",
       source: "url",
-	  thumbSmall: "attachments[0].url",
-	  thumbMedium: "attachments[0].url",
-	  thumbBig: "attachments[0].url",
-	  dateFormat: "yyyy-MM-dd HH:mm:ss",
-	  dateTimeZone:"GMT+7",
-	  createdDate: "modified",
-	  updatedDate: "",
-	  detail:"content",
-	  resolve_detail_data:"jRemoveTags_ul_style_form"
+      thumbSmall: "attachments[0].url",
+      thumbMedium: "attachments[0].url",
+      thumbBig: "attachments[0].url",
+      dateFormat: "yyyy-MM-dd HH:mm:ss",
+      dateTimeZone: "GMT+7",
+      createdDate: "modified",
+      updatedDate: "",
+      detail: "content",
+      resolve_detail_data: "jRemoveTags_ul_style_form"
+    }
+  },
+  ncdt: {
+    post_list: "$.SubjectDetail",
+    post: {
+      id: "SubjectDetailId",
+      title: "SubjectDetailTitle",
+      desc: "SubjectDetailLead",
+      source: "",
+      thumbSmall: "SubjectDetailImg",
+      thumbMedium: "SubjectDetailImg",
+      thumbBig: "SubjectDetailImg",
+      dateRegex:"(\d{4}\/\d{2}\/\d{2})",
+      dateFormat: "yyyy/MM/dd",
+      dateTimeZone: "GMT+7",
+      createdDate: "SubjectDetailImg",
+      updatedDate: ""
+    },
+    detail: "$.SubjectDetailContent",
+    resolve_post: {
+      source: "$.SubjectDetailLink"
+    },
+    related_post_list: "$.SubjectDetailRelatedSubject",
+    related_post: {
+      id: "SubjectDetailId",
+      title: "SubjectDetailTitle",
+      desc: "SubjectDetailLead",
+      source: "SubjectDetailLink",
+      thumbSmall: "SubjectDetailImg",
+      thumbMedium: "SubjectDetailImg",
+      thumbBig: "SubjectDetailImg",
+      dateRegex:"(\d{4}\/\d{2}\/\d{2})",
+      dateFormat: "yyyy/MM/dd",
+      dateTimeZone: "GMT+7",
+      createdDate: "SubjectDetailImg",
+      updatedDate: ""
     }
   }
 }
