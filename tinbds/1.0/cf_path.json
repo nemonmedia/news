@@ -70,5 +70,38 @@
       createdDate: "SubjectDetailImg",
       updatedDate: ""
     }
+  },
+  baomoi: {
+    post_list: "$.data.linfos",
+    post: {
+      id: "lid",
+      title: "title",
+      desc: "desc",
+      source: "url",
+      thumbSmall: "cover",
+      thumbMedium: "cover",
+      thumbBig: "cover",
+      dateFormat: "L13",
+      createdDate: "posttime",
+      updatedDate: "",
+      detail: "content",
+      resolve_detail_data:"jRemoveTags_script,jReplaceTag_h2_span,jReplaceTag_h3_span, jReplaceTag_h1_span"
+    },
+    next_page: "$.data.linfos[-1:].lid",
+    related_post_list: "$.data.linfos",
+    related_post: {
+      id: "lid",
+      title: "title",
+      desc: "desc",
+      source: "url",
+      thumbSmall: "cover",
+      thumbMedium: "cover",
+      thumbBig: "cover",
+      dateFormat: "L13",
+      createdDate: "posttime",
+      updatedDate: "",
+      detail: "content",
+      resolve_detail_data:"jRemoveTags_script,jReplaceTag_h2_span,jReplaceTag_h3_span, jReplaceTag_h1_span"
+    }
   }
 }
