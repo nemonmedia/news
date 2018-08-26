@@ -34,6 +34,42 @@
       ]
     },
     {
+      name: "CafeF",
+      type: 0,
+      use_char_icon: true,
+      res_icon_name: "char_CF",
+      provider_cf: [
+        {
+          provider_id: "baomoi",
+          pid: "baomoi",
+          group_id: "baomoi",
+          url: "http://104.131.141.52:3000/v1/news/articles/13/3/{pglid}/10?platform=android&app_version=1.2.4",
+          page_var: "lid",
+          page_type: "custom,0",
+          detail_url: "",
+          related_url: "http://104.131.141.52:3000/v1/news/articles_relative/46/4/{post.id}?platform=android&app_version=1.2.4"
+        }
+      ]
+    },
+     {
+      name: "Doanh Nghiệp",
+      type: 0,
+      use_char_icon: true,
+      res_icon_name: "char_DN",
+      provider_cf: [
+        {
+          provider_id: "baomoi",
+          pid: "baomoi",
+          group_id: "baomoi",
+          url: "http://104.131.141.52:3000/v1/news/articles/13/3/{pglid}/10?platform=android&app_version=1.2.4",
+          page_var: "lid",
+          page_type: "custom,0",
+          detail_url: "",
+          related_url: "http://104.131.141.52:3000/v1/news/articles_relative/46/4/{post.id}?platform=android&app_version=1.2.4"
+        }
+      ]
+    },
+    {
       name: "Biz Tech",
       type: 0,
       use_char_icon: true,
