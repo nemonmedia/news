@@ -3,6 +3,7 @@
     {
       name: "Thể Thao 247",
       type: 0,
+      enabled: false,
       use_char_icon: true,
       res_icon_name: "",
       provider_cf: [
