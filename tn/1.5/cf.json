@@ -1,0 +1,408 @@
+{
+  nav_items: [
+  {
+      name: "f_search",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "",
+      provider_cf: [
+        {
+		  provider_id:"f_search",
+		  pid:"f_search",
+		  group_id:"f_search",
+          url: "https://mcms.thanhnien.vn/services_v2/searchPosts",
+		  url_method:"post",
+		  param_funcs: {
+            boundary: "randUUID",
+            keyword: "pb_keyword"
+          },
+		  page_var: "page_index",
+		  page_type: "normal,1",
+		  detail_url: "https://mcms.thanhnien.vn/services_v2/getStory",
+		  detail_url_method:"post",
+		  detail_params: {
+            boundary: "randUUID",
+			story_id: "post.id"
+          }
+        }
+      ]
+    },
+    {
+      name: "Trang chủ",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "cat_home",
+      provider_cf: [
+        {
+		  provider_id:"tn_home",
+		  pid:"tn_home",
+		  group_id:"trang_chu",
+          url: "https://mcms.thanhnien.vn/services_v2/getListHome",
+		  url_method:"post",
+		  param_funcs: {
+            boundary: "randUUID",
+            "": ""
+          },
+		  page_type:"fixed",
+		  detail_url: "https://mcms.thanhnien.vn/services_v2/getStory",
+		  detail_url_method:"post",
+		  detail_params: {
+            boundary: "randUUID",
+			story_id: "post.id"
+          }
+        }
+      ]
+    },
+	{
+      name: "Thời sự",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "cat_thoi_su",
+      provider_cf: [
+        {
+		  provider_id:"tn_thoi_su",
+		  pid:"tn_home",
+		  group_id:"thoi_su",
+          url: "https://mcms.thanhnien.vn/services_v2/getListSection",
+		  url_method:"post",
+		  param_funcs: {
+            boundary: "randUUID",
+			section_id: "110919"
+          },
+          page_var: "page_index",
+		  page_type: "normal,1",
+		  detail_url: "https://mcms.thanhnien.vn/services_v2/getStory",
+		  detail_url_method:"post",
+		  detail_params: {
+            boundary: "randUUID",
+			story_id: "post.id"
+          }
+        }
+      ]
+    },
+	{
+      name: "Công nghệ",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "cat_so_hoa",
+      provider_cf: [
+        {
+		  provider_id:"tn_cong_nghe",
+		  pid:"tn_home",
+		  group_id:"cong_nghe",
+          url: "https://mcms.thanhnien.vn/services_v2/getListSection",
+		  url_method:"post",
+		  param_funcs: {
+            boundary: "randUUID",
+			section_id: "111322"
+          },
+          page_var: "page_index",
+		  page_type: "normal,1",
+		  detail_url: "https://mcms.thanhnien.vn/services_v2/getStory",
+		  detail_url_method:"post",
+		  detail_params: {
+            boundary: "randUUID",
+			story_id: "post.id"
+          }
+        }
+      ]
+    },
+	{
+      name: "Đời sống",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "cat_gia_dinh",
+      provider_cf: [
+        {
+		  provider_id:"tn_doi_song",
+		  pid:"tn_home",
+		  group_id:"doi_song",
+          url: "https://mcms.thanhnien.vn/services_v2/getListSection",
+		  url_method:"post",
+		  param_funcs: {
+            boundary: "randUUID",
+			section_id: "110931"
+          },
+          page_var: "page_index",
+		  page_type: "normal,1",
+		  detail_url: "https://mcms.thanhnien.vn/services_v2/getStory",
+		  detail_url_method:"post",
+		  detail_params: {
+            boundary: "randUUID",
+			story_id: "post.id"
+          }
+        }
+      ]
+    },
+	{
+      name: "Giáo dục",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "cat_giao_duc",
+      provider_cf: [
+        {
+		  provider_id:"tn_giao_duc",
+		  pid:"tn_home",
+		  group_id:"giao_duc",
+          url: "https://mcms.thanhnien.vn/services_v2/getListSection",
+		  url_method:"post",
+		  param_funcs: {
+            boundary: "randUUID",
+			section_id: "110936"
+          },
+          page_var: "page_index",
+		  page_type: "normal,1",
+		  detail_url: "https://mcms.thanhnien.vn/services_v2/getStory",
+		  detail_url_method:"post",
+		  detail_params: {
+            boundary: "randUUID",
+			story_id: "post.id"
+          }
+        }
+      ]
+    },
+	{
+      name: "Kinh doanh",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "cat_kinh_doanh",
+      provider_cf: [
+        {
+		  provider_id:"tn_kinh_doanh",
+		  pid:"tn_home",
+		  group_id:"kinh_doanh",
+          url: "https://mcms.thanhnien.vn/services_v2/getListSection",
+		  url_method:"post",
+		  param_funcs: {
+            boundary: "randUUID",
+			section_id: "110942"
+          },
+          page_var: "page_index",
+		  page_type: "normal,1",
+		  detail_url: "https://mcms.thanhnien.vn/services_v2/getStory",
+		  detail_url_method:"post",
+		  detail_params: {
+            boundary: "randUUID",
+			story_id: "post.id"
+          }
+        }
+      ]
+    },
+	{
+      name: "Sức khỏe",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "cat_suc_khoe",
+      provider_cf: [
+        {
+		  provider_id:"tn_suc_khoe",
+		  pid:"tn_home",
+		  group_id:"suc_khoe",
+          url: "https://mcms.thanhnien.vn/services_v2/getListSection",
+		  url_method:"post",
+		  param_funcs: {
+            boundary: "randUUID",
+			section_id: "110947"
+          },
+          page_var: "page_index",
+		  page_type: "normal,1",
+		  detail_url: "https://mcms.thanhnien.vn/services_v2/getStory",
+		  detail_url_method:"post",
+		  detail_params: {
+            boundary: "randUUID",
+			story_id: "post.id"
+          }
+        }
+      ]
+    },
+	{
+      name: "Thế giới",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "cat_the_gioi",
+      provider_cf: [
+        {
+		  provider_id:"tn_the_gioi",
+		  pid:"tn_home",
+		  group_id:"the_gioi",
+          url: "https://mcms.thanhnien.vn/services_v2/getListSection",
+		  url_method:"post",
+		  param_funcs: {
+            boundary: "randUUID",
+			section_id: "111324"
+          },
+          page_var: "page_index",
+		  page_type: "normal,1",
+		  detail_url: "https://mcms.thanhnien.vn/services_v2/getStory",
+		  detail_url_method:"post",
+		  detail_params: {
+            boundary: "randUUID",
+			story_id: "post.id"
+          }
+        }
+      ]
+    },
+	{
+      name: "Giới trẻ",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "cat_tam_su",
+      provider_cf: [
+        {
+		  provider_id:"tn_gioi_tre",
+		  pid:"tn_home",
+		  group_id:"gioi_tre",
+          url: "https://mcms.thanhnien.vn/services_v2/getListSection",
+		  url_method:"post",
+		  param_funcs: {
+            boundary: "randUUID",
+			section_id: "111325"
+          },
+          page_var: "page_index",
+		  page_type: "normal,1",
+		  detail_url: "https://mcms.thanhnien.vn/services_v2/getStory",
+		  detail_url_method:"post",
+		  detail_params: {
+            boundary: "randUUID",
+			story_id: "post.id"
+          }
+        }
+      ]
+    },
+	{
+      name: "Tôi viết",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "cat_can_biet",
+      provider_cf: [
+        {
+		  provider_id:"tn_toi_viet",
+		  pid:"tn_home",
+		  group_id:"toi_viet",
+          url: "https://mcms.thanhnien.vn/services_v2/getListSection",
+		  url_method:"post",
+		  param_funcs: {
+            boundary: "randUUID",
+			section_id: "56645"
+          },
+          page_var: "page_index",
+		  page_type: "normal,1",
+		  detail_url: "https://mcms.thanhnien.vn/services_v2/getStory",
+		  detail_url_method:"post",
+		  detail_params: {
+            boundary: "randUUID",
+			story_id: "post.id"
+          }
+        }
+      ]
+    },
+	{
+      name: "Văn hóa",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "cat_giai_tri",
+      provider_cf: [
+        {
+		  provider_id:"tn_van_hoa",
+		  pid:"tn_home",
+		  group_id:"van_hoa",
+          url: "https://mcms.thanhnien.vn/services_v2/getListSection",
+		  url_method:"post",
+		  param_funcs: {
+            boundary: "randUUID",
+			section_id: "110960"
+          },
+          page_var: "page_index",
+		  page_type: "normal,1",
+		  detail_url: "https://mcms.thanhnien.vn/services_v2/getStory",
+		  detail_url_method:"post",
+		  detail_params: {
+            boundary: "randUUID",
+			story_id: "post.id"
+          }
+        }
+      ]
+    },
+	{
+      name: "Thể thao",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "cat_the_thao",
+      provider_cf: [
+        {
+		  provider_id:"tn_the_thao",
+		  pid:"tn_home",
+		  group_id:"the_thao",
+          url: "https://mcms.thanhnien.vn/services_v2/getListSection",
+		  url_method:"post",
+		  param_funcs: {
+            boundary: "randUUID",
+			section_id: "111421"
+          },
+          page_var: "page_index",
+		  page_type: "normal,1",
+		  detail_url: "https://mcms.thanhnien.vn/services_v2/getStory",
+		  detail_url_method:"post",
+		  detail_params: {
+            boundary: "randUUID",
+			story_id: "post.id"
+          }
+        }
+      ]
+    },
+	{
+      name: "Xe",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "cat_xe",
+      provider_cf: [
+        {
+		  provider_id:"tn_xe",
+		  pid:"tn_home",
+		  group_id:"xe",
+          url: "https://mcms.thanhnien.vn/services_v2/getListSection",
+		  url_method:"post",
+		  param_funcs: {
+            boundary: "randUUID",
+			section_id: "115588"
+          },
+          page_var: "page_index",
+		  page_type: "normal,1",
+		  detail_url: "https://mcms.thanhnien.vn/services_v2/getStory",
+		  detail_url_method:"post",
+		  detail_params: {
+            boundary: "randUUID",
+			story_id: "post.id"
+          }
+        }
+      ]
+    },
+	{
+      name: "Video",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "cat_video",
+      provider_cf: [
+        {
+		  provider_id:"tn_video",
+		  pid:"tn_home",
+		  group_id:"video",
+          url: "https://mcms.thanhnien.vn/services_v2/getListSection",
+		  url_method:"post",
+		  param_funcs: {
+            boundary: "randUUID",
+			section_id: "111328"
+          },
+          page_var: "page_index",
+		  page_type: "normal,1",
+		  detail_url: "https://mcms.thanhnien.vn/services_v2/getStory",
+		  detail_url_method:"post",
+		  detail_params: {
+            boundary: "randUUID",
+			story_id: "post.id"
+          }
+        }
+      ]
+    }
+  ]
+}
