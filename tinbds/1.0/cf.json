@@ -36,6 +36,7 @@
     {
       name: "CafeF",
       type: 0,
+      enabled:false,
       use_char_icon: true,
       res_icon_name: "char_CF",
       provider_cf: [
