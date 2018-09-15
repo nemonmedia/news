@@ -45,7 +45,7 @@
       thumbSmall: "SubjectDetailImg",
       thumbMedium: "SubjectDetailImg",
       thumbBig: "SubjectDetailImg",
-      dateRegex:"(\\d{4}\/\\d{2}\/\\d{2})",
+      dateRegex: "(\\d{4}\/\\d{2}\/\\d{2})",
       dateFormat: "yyyy/MM/dd",
       dateTimeZone: "GMT+7",
       createdDate: "SubjectDetailImg",
@@ -64,7 +64,7 @@
       thumbSmall: "SubjectDetailImg",
       thumbMedium: "SubjectDetailImg",
       thumbBig: "SubjectDetailImg",
-      dateRegex:"(\\d{4}\/\\d{2}\/\\d{2})",
+      dateRegex: "(\\d{4}\/\\d{2}\/\\d{2})",
       dateFormat: "yyyy/MM/dd",
       dateTimeZone: "GMT+7",
       createdDate: "SubjectDetailImg",
@@ -85,7 +85,7 @@
       createdDate: "posttime",
       updatedDate: "",
       detail: "content",
-      resolve_detail_data:"jRemoveTags_script,jReplaceTag_h2_span,jReplaceTag_h3_span, jReplaceTag_h1_span"
+      resolve_detail_data: "jRemoveTags_script,jReplaceTag_h2_span,jReplaceTag_h3_span, jReplaceTag_h1_span"
     },
     next_page: "$.data.linfos[-1:].lid",
     related_post_list: "$.data.linfos",
@@ -101,7 +101,37 @@
       createdDate: "posttime",
       updatedDate: "",
       detail: "content",
-      resolve_detail_data:"jRemoveTags_script,jReplaceTag_h2_span,jReplaceTag_h3_span, jReplaceTag_h1_span"
+      resolve_detail_data: "jRemoveTags_script,jReplaceTag_h2_span,jReplaceTag_h3_span, jReplaceTag_h1_span"
+    }
+  },
+  expressv: {
+    post_list: "$",
+    post: {
+      id: "NewsId",
+      title: "Title",
+      desc: "Description",
+      source: "Link",
+      thumbSmall: "Icon",
+      thumbMedium: "Icon",
+      thumbBig: "Icon",
+      dateFormat: "EEE, d MMM yyyy HH:mm:ss Z",
+      createdDate: "DatePost",
+      updatedDate: ""
+    },
+    detail: "$[0].Summary",
+    resolve_detail_data: "jRemoveTags_script,jReplaceTag_strong_span,jReplaceTag_h3_span, jReplaceTag_h2_span,jReplaceTag_h1_span",
+    related_post_list: "$",
+    related_post: {
+      id: "NewsId",
+      title: "Title",
+      desc: "Description",
+      source: "Link",
+      thumbSmall: "Icon",
+      thumbMedium: "Icon",
+      thumbBig: "Icon",
+      dateFormat: "EEE, d MMM yyyy HH:mm:ss Z",
+      createdDate: "DatePost",
+      updatedDate: ""
     }
   }
 }
