@@ -25,7 +25,7 @@
       thumbSmall: "Icon",
       thumbMedium: "Icon",
       thumbBig: "Icon",
-      dateFormat: "EEE, d MMM yyyy HH:mm:ss Z",
+      dateFormat: "HH:mm dd/MM/yyyy",
       createdDate: "DatePost",
       updatedDate: ""
     },
@@ -40,7 +40,7 @@
       thumbSmall: "Icon",
       thumbMedium: "Icon",
       thumbBig: "Icon",
-      dateFormat: "EEE, d MMM yyyy HH:mm:ss Z",
+      dateFormat: "HH:mm dd/MM/yyyy",
       createdDate: "DatePost",
       updatedDate: ""
     }
