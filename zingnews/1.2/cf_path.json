@@ -20,7 +20,7 @@
     post: {
       id: "NewsId",
       title: "Title",
-      desc: "Description",
+      desc: "",
       source: "Link",
       thumbSmall: "Icon",
       thumbMedium: "Icon",
