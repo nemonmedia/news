@@ -114,7 +114,7 @@
       thumbSmall: "Icon",
       thumbMedium: "Icon",
       thumbBig: "Icon",
-      dateFormat: "EEE, d MMM yyyy HH:mm:ss Z",
+      dateFormat: "EEE',' d MMM yyyy HH:mm:ss Z",
       createdDate: "DatePost",
       updatedDate: ""
     },
