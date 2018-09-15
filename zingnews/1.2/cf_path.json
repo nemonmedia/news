@@ -30,19 +30,6 @@
       updatedDate: ""
     },
     detail: "$[0].Summary",
-    resolve_detail_data: "jRemoveTags_script,jReplaceTag_strong_span,jReplaceTag_h3_span, jReplaceTag_h2_span,jReplaceTag_h1_span",
-    related_post_list: "$",
-    related_post: {
-      id: "NewsId",
-      title: "Title",
-      desc: "Description",
-      source: "Link",
-      thumbSmall: "Icon",
-      thumbMedium: "Icon",
-      thumbBig: "Icon",
-      dateFormat: "HH:mm dd/MM/yyyy",
-      createdDate: "DatePost",
-      updatedDate: ""
-    }
+    resolve_detail_data: "jRemoveTags_script,jReplaceTag_strong_span,jReplaceTag_h3_span, jReplaceTag_h2_span,jReplaceTag_h1_span"
   }
 }
