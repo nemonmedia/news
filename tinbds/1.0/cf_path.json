@@ -109,7 +109,7 @@
     post: {
       id: "NewsId",
       title: "Title",
-      desc: "Description",
+      desc: "",
       source: "Link",
       thumbSmall: "Icon",
       thumbMedium: "Icon",
@@ -124,7 +124,7 @@
     related_post: {
       id: "NewsId",
       title: "Title",
-      desc: "Description",
+      desc: "",
       source: "Link",
       thumbSmall: "Icon",
       thumbMedium: "Icon",
