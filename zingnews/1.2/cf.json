@@ -72,6 +72,23 @@
       ]
     },
     {
+      name: "Video",
+      type: 0,
+      use_char_icon: true,
+      res_icon_name: "cat_video",
+      provider_cf: [
+        {
+          provider_id: "expressv",
+          pid: "expressv",
+          group_id: "expressv",
+          url: "https://expressviet.net/api/LMenu/getVideoByMenu/87",
+          page_var: "",
+          page_type: "fixed",
+          detail_url: "https://expressviet.net/api/LMenu/VideoByNewsID/{post.id}"
+        }
+      ]
+    },
+    {
       name: "Kinh doanh",
       type: 0,
       use_char_icon: true,
