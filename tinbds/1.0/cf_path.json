@@ -114,7 +114,8 @@
       thumbSmall: "Icon",
       thumbMedium: "Icon",
       thumbBig: "Icon",
-      dateFormat: "EEE',' d MMM yyyy HH:mm:ss Z",
+      dateFormat: "EEE',' d MMM yyyy HH:mm:ss 'GMT+7'",
+      dateTimeZone: "GMT+7",
       createdDate: "DatePost",
       updatedDate: ""
     },
@@ -129,7 +130,8 @@
       thumbSmall: "Icon",
       thumbMedium: "Icon",
       thumbBig: "Icon",
-      dateFormat: "EEE, d MMM yyyy HH:mm:ss Z",
+      dateFormat: "EEE',' d MMM yyyy HH:mm:ss 'GMT+7'",
+      dateTimeZone: "GMT+7",
       createdDate: "DatePost",
       updatedDate: ""
     }
