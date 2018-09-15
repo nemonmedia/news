@@ -6,13 +6,43 @@
       title: "post_title",
       desc: "description",
       source: "source_url",
-	  thumbSmall: "images.thumb_images.342x270",
-	  thumbMedium: "images.thumb_images.342x270",
-	  thumbBig: "images.source_url",
-	  dateFormat: "L10",
-	  createdDate: "created_date",
-	  updatedDate: ""
+      thumbSmall: "images.thumb_images.342x270",
+      thumbMedium: "images.thumb_images.342x270",
+      thumbBig: "images.source_url",
+      dateFormat: "L10",
+      createdDate: "created_date",
+      updatedDate: ""
     },
-	detail: "$.data.post_content"
+    detail: "$.data.post_content"
+  },
+  expressv: {
+    post_list: "$",
+    post: {
+      id: "NewsId",
+      title: "Title",
+      desc: "Description",
+      source: "Link",
+      thumbSmall: "Icon",
+      thumbMedium: "Icon",
+      thumbBig: "Icon",
+      dateFormat: "EEE, d MMM yyyy HH:mm:ss Z",
+      createdDate: "DatePost",
+      updatedDate: ""
+    },
+    detail: "$[0].Summary",
+    resolve_detail_data: "jRemoveTags_script,jReplaceTag_strong_span,jReplaceTag_h3_span, jReplaceTag_h2_span,jReplaceTag_h1_span",
+    related_post_list: "$",
+    related_post: {
+      id: "NewsId",
+      title: "Title",
+      desc: "Description",
+      source: "Link",
+      thumbSmall: "Icon",
+      thumbMedium: "Icon",
+      thumbBig: "Icon",
+      dateFormat: "EEE, d MMM yyyy HH:mm:ss Z",
+      createdDate: "DatePost",
+      updatedDate: ""
+    }
   }
 }
