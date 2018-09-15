@@ -140,6 +140,23 @@
       ]
     },
     {
+      name: "Chuyện lạ",
+      type: 0,
+      use_char_icon: true,
+      res_icon_name: "cat_can_biet",
+      provider_cf: [
+        {
+          provider_id: "chuyen_la",
+          pid: "kh_home",
+          group_id: "chuyen_la",
+          url: "http://api.chiennn.me/mobile/post?access_key=4297f44b13955235245b2497399d7a93&limit=20&&filter=[{\"column\":\"cate_id\",\"operator\":\"matches_any\",\"value\":\"72\"}]",
+          page_var: "page",
+          page_type: "normal,1",
+          detail_url: "http://api.chiennn.me/mobile/post/{post.id}?access_key=4297f44b13955235245b2497399d7a93"
+        }
+      ]
+    },
+    {
       name: "Máy tính",
       type: 0,
       enabled: false,
@@ -160,6 +177,7 @@
     {
       name: "Công nghệ",
       type: 0,
+      enabled: false,
       use_char_icon: true,
       res_icon_name: "cat_khoa_hoc",
       provider_cf: [
