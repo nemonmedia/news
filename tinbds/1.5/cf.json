@@ -1,0 +1,140 @@
+{
+  nav_items: [
+    {
+      name: "Tin tức",
+      type: 0,
+      use_char_icon: true,
+      res_icon_name: "cat_home",
+      provider_cf: [
+        {
+          provider_id: "bds_home",
+          pid: "bds_home",
+          group_id: "trang_chu",
+          url: "https://kenhthongtinbds.com/api/get_category_posts/?id=5&",
+          page_var: "page",
+          page_type: "normal,1"
+        }
+      ]
+    },
+    {
+      name: "Nên đọc",
+      type: 0,
+      use_char_icon: true,
+      res_icon_name: "cat_thoi_su",
+      provider_cf: [
+        {
+          provider_id: "ncdt_nen_doc",
+          pid: "ncdt",
+          group_id: "nen_doc",
+          url: "http://serviceapps.nhipcaudautu.vn/galaxyservice.svc/subjectdetailByFolder/0-{pgpage}",
+          page_var: "page",
+          page_type: "normal,1",
+          detail_url: "http://serviceapps.nhipcaudautu.vn/galaxyservice.svc/subjectdetail/{post.id}"
+        }
+      ]
+    },
+    {
+      name: "CafeF",
+      type: 0,
+      enabled:true,
+      use_char_icon: true,
+      res_icon_name: "char_CF",
+      provider_cf: [
+        {
+          provider_id: "expressv",
+          pid: "expressv",
+          group_id: "expressv",
+          url: "https://expressviet.net/api/News247/GetNewsByMenu/206",
+          page_var: "",
+          page_type: "fixed",
+          detail_url: "https://expressviet.net/api/news/newsid/{post.id}",
+          related_url: "https://expressviet.net/api/news/GetRelative/{post.id}"
+        }
+      ]
+    },
+    {
+      name: "Biz Tech",
+      type: 0,
+      use_char_icon: true,
+      res_icon_name: "cat_kinh_doanh",
+      provider_cf: [
+        {
+          provider_id: "ncdt_biz_tech",
+          pid: "ncdt",
+          group_id: "biz_tech",
+          url: "http://serviceapps.nhipcaudautu.vn/galaxyservice.svc/subjectdetailByFolder/30063-{pgpage}",
+          page_var: "page",
+          page_type: "normal,1",
+          detail_url: "http://serviceapps.nhipcaudautu.vn/galaxyservice.svc/subjectdetail/{post.id}"
+        }
+      ]
+    },
+    {
+      name: "Đầu tư",
+      type: 0,
+      use_char_icon: true,
+      res_icon_name: "cat_chuyen_nhuong",
+      provider_cf: [
+        {
+          provider_id: "ncdt_dau_tu",
+          pid: "ncdt",
+          group_id: "dau_tu",
+          url: "http://serviceapps.nhipcaudautu.vn/galaxyservice.svc/subjectdetailByFolder/30061-{pgpage}",
+          page_var: "page",
+          page_type: "normal,1",
+          detail_url: "http://serviceapps.nhipcaudautu.vn/galaxyservice.svc/subjectdetail/{post.id}"
+        }
+      ]
+    },
+    {
+      name: "Nhân vật",
+      type: 0,
+      use_char_icon: true,
+      res_icon_name: "cat_can_biet",
+      provider_cf: [
+        {
+          provider_id: "ncdt_nv",
+          pid: "ncdt",
+          group_id: "nv",
+          url: "http://serviceapps.nhipcaudautu.vn/galaxyservice.svc/subjectdetailByFolder/30141-{pgpage}",
+          page_var: "page",
+          page_type: "normal,1",
+          detail_url: "http://serviceapps.nhipcaudautu.vn/galaxyservice.svc/subjectdetail/{post.id}"
+        }
+      ]
+    },
+    {
+      name: "Chuyên đề",
+      type: 0,
+      use_char_icon: true,
+      res_icon_name: "cat_tam_su",
+      provider_cf: [
+        {
+          provider_id: "ncdt_nd",
+          pid: "ncdt",
+          group_id: "cd",
+          url: "http://serviceapps.nhipcaudautu.vn/galaxyservice.svc/subjectdetailByFolder/30069-{pgpage}",
+          page_var: "page",
+          page_type: "normal,1",
+          detail_url: "http://serviceapps.nhipcaudautu.vn/galaxyservice.svc/subjectdetail/{post.id}"
+        }
+      ]
+    },
+    {
+      name: "Phong thủy",
+      type: 0,
+      use_char_icon: true,
+      res_icon_name: "cat_phong_thuy",
+      provider_cf: [
+        {
+          provider_id: "bds_phong_thuy",
+          pid: "bds_phong_thuy",
+          group_id: "trang_chu",
+          url: "https://kenhthongtinbds.com/api/get_category_posts/?id=7&",
+          page_var: "page",
+          page_type: "normal,1"
+        }
+      ]
+    }
+  ]
+}

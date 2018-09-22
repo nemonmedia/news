@@ -1,0 +1,139 @@
+{
+  bds_home: {
+    post_list: "$.posts",
+    post: {
+      id: "id",
+      title: "title_plain",
+      desc: "excerpt",
+      source: "url",
+      thumbSmall: "attachments[0].url",
+      thumbMedium: "attachments[0].url",
+      thumbBig: "attachments[0].url",
+      dateFormat: "yyyy-MM-dd HH:mm:ss",
+      dateTimeZone: "GMT+7",
+      createdDate: "modified",
+      updatedDate: "",
+      detail: "content",
+      resolve_detail_data: "jRemoveTags_ul_style_form"
+    }
+  },
+  bds_phong_thuy: {
+    post_list: "$.posts",
+    post: {
+      id: "id",
+      title: "title_plain",
+      desc: "",
+      source: "url",
+      thumbSmall: "attachments[0].url",
+      thumbMedium: "attachments[0].url",
+      thumbBig: "attachments[0].url",
+      dateFormat: "yyyy-MM-dd HH:mm:ss",
+      dateTimeZone: "GMT+7",
+      createdDate: "modified",
+      updatedDate: "",
+      detail: "content",
+      resolve_detail_data: "jRemoveTags_ul_style_form"
+    }
+  },
+  ncdt: {
+    post_list: "$.SubjectDetail",
+    post: {
+      id: "SubjectDetailId",
+      title: "SubjectDetailTitle",
+      desc: "SubjectDetailLead",
+      source: "",
+      thumbSmall: "SubjectDetailImg",
+      thumbMedium: "SubjectDetailImg",
+      thumbBig: "SubjectDetailImg",
+      dateRegex: "(\\d{4}\/\\d{2}\/\\d{2})",
+      dateFormat: "yyyy/MM/dd",
+      dateTimeZone: "GMT+7",
+      createdDate: "SubjectDetailImg",
+      updatedDate: ""
+    },
+    detail: "$.SubjectDetailContent",
+    resolve_post: {
+      source: "$.SubjectDetailLink"
+    },
+    related_post_list: "$.SubjectDetailRelatedSubject",
+    related_post: {
+      id: "SubjectDetailId",
+      title: "SubjectDetailTitle",
+      desc: "SubjectDetailLead",
+      source: "SubjectDetailLink",
+      thumbSmall: "SubjectDetailImg",
+      thumbMedium: "SubjectDetailImg",
+      thumbBig: "SubjectDetailImg",
+      dateRegex: "(\\d{4}\/\\d{2}\/\\d{2})",
+      dateFormat: "yyyy/MM/dd",
+      dateTimeZone: "GMT+7",
+      createdDate: "SubjectDetailImg",
+      updatedDate: ""
+    }
+  },
+  baomoi: {
+    post_list: "$.data.linfos",
+    post: {
+      id: "lid",
+      title: "title",
+      desc: "desc",
+      source: "url",
+      thumbSmall: "cover",
+      thumbMedium: "cover",
+      thumbBig: "cover",
+      dateFormat: "L13",
+      createdDate: "posttime",
+      updatedDate: "",
+      detail: "content",
+      resolve_detail_data: "jRemoveTags_script,jReplaceTag_h2_span,jReplaceTag_h3_span, jReplaceTag_h1_span"
+    },
+    next_page: "$.data.linfos[-1:].lid",
+    related_post_list: "$.data.linfos",
+    related_post: {
+      id: "lid",
+      title: "title",
+      desc: "desc",
+      source: "url",
+      thumbSmall: "cover",
+      thumbMedium: "cover",
+      thumbBig: "cover",
+      dateFormat: "L13",
+      createdDate: "posttime",
+      updatedDate: "",
+      detail: "content",
+      resolve_detail_data: "jRemoveTags_script,jReplaceTag_h2_span,jReplaceTag_h3_span, jReplaceTag_h1_span"
+    }
+  },
+  expressv: {
+    post_list: "$",
+    post: {
+      id: "NewsId",
+      title: "Title",
+      desc: "",
+      source: "Link",
+      thumbSmall: "Icon",
+      thumbMedium: "Icon",
+      thumbBig: "Icon",
+      dateFormat: "EEE',' d MMM yyyy HH:mm:ss 'GMT+7'",
+      dateTimeZone: "GMT+7",
+      createdDate: "DatePost",
+      updatedDate: ""
+    },
+    detail: "$[0].Summary",
+    resolve_detail_data: "jRemoveTags_script,jReplaceTag_strong_span,jReplaceTag_h3_span, jReplaceTag_h2_span,jReplaceTag_h1_span",
+    related_post_list: "$",
+    related_post: {
+      id: "NewsId",
+      title: "Title",
+      desc: "",
+      source: "Link",
+      thumbSmall: "Icon",
+      thumbMedium: "Icon",
+      thumbBig: "Icon",
+      dateFormat: "EEE',' d MMM yyyy HH:mm:ss 'GMT+7'",
+      dateTimeZone: "GMT+7",
+      createdDate: "DatePost",
+      updatedDate: ""
+    }
+  }
+}
