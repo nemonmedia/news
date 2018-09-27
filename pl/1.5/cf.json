@@ -1,0 +1,366 @@
+{
+  nav_items: [
+   {
+      name: "f_search",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "",
+      provider_cf: [
+        {
+		  provider_id:"f_search",
+		  pid:"plo_home",
+		  group_id:"f_search",
+          url: "http://plo.vn/api/search.json?",
+		  param_funcs:{
+			keyword:"pb_keyword"
+		  },
+		  page_type: "fixed",
+		  detail_url: "http://plo.vn/api/media.json?",
+		  detail_params: {
+            contentid: "post.id"
+          }
+        }
+      ]
+    },
+    {
+      name: "Trang chủ",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "cat_home",
+      provider_cf: [
+        {
+		  provider_id:"trang_chu",
+		  pid:"plo_home",
+		  group_id:"trang_chu",
+          url: "http://plo.vn/api/contents.json?zoneid=0&",
+          page_var: "page",
+		  page_type: "normal,1",
+		  detail_url: "http://plo.vn/api/media.json?",
+		  detail_params: {
+            contentid: "post.id"
+          }
+        }
+      ]
+    },
+	{
+      name: "Media",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "cat_video",
+      provider_cf: [
+        {
+		  provider_id:"media",
+		  pid:"plo_home",
+		  group_id:"media",
+          url: "http://plo.vn/api/contents.json?zoneid=25&",
+		  page_var: "page",
+		  page_type: "normal,1",
+		  detail_url: "http://plo.vn/api/media.json?",
+		  detail_params: {
+            contentid: "post.id"
+          }
+        }
+      ]
+    },
+	{
+      name: "Thời sự",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "cat_thoi_su",
+      provider_cf: [
+        {
+		  provider_id:"thoi_su",
+		  pid:"plo_home",
+		  group_id:"thoi_su",
+          url: "http://plo.vn/api/contents.json?zoneid=1&",
+		  page_var: "page",
+		  page_type: "normal,1",
+		  detail_url: "http://plo.vn/api/media.json?",
+		  detail_params: {
+            contentid: "post.id"
+          }
+        }
+      ]
+    },
+	{
+      name: "Pháp luật",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "cat_phap_luat", 
+      provider_cf: [
+        {
+		  provider_id:"phap_luat",
+		  pid:"plo_home",
+		  group_id:"phap_luat",
+          url: "http://plo.vn/api/contents.json?zoneid=114&",
+		  page_var: "page",
+		  page_type: "normal,1",
+		  detail_url: "http://plo.vn/api/media.json?",
+		  detail_params: {
+            contentid: "post.id"
+          }
+        }
+      ]
+    },
+	{
+      name: "Quốc tế",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "cat_the_gioi",
+      provider_cf: [
+        {
+		  provider_id:"quoc_te",
+		  pid:"plo_home",
+		  group_id:"quoc_te",
+          url: "http://plo.vn/api/contents.json?zoneid=8&",
+		  page_var: "page",
+		  page_type: "normal,1",
+		  detail_url: "http://plo.vn/api/media.json?",
+		  detail_params: {
+            contentid: "post.id"
+          }
+        }
+      ]
+    },
+	{
+      name: "An ninh",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "cat_an_ninh",
+      provider_cf: [
+        {
+		  provider_id:"an_ninh",
+		  pid:"plo_home",
+		  group_id:"an_ninh",
+          url: "http://plo.vn/api/contents.json?zoneid=23&",
+		  page_var: "page",
+		  page_type: "normal,1",
+		  detail_url: "http://plo.vn/api/media.json?",
+		  detail_params: {
+            contentid: "post.id"
+          }
+        }
+      ]
+    },
+	{
+      name: "Xã hội",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "cat_cong_dong",
+      provider_cf: [
+        {
+		  provider_id:"xa_hoi",
+		  pid:"plo_home",
+		  group_id:"xa_hoi",
+          url: "http://plo.vn/api/contents.json?zoneid=3&",
+		  page_var: "page",
+		  page_type: "normal,1",
+		  detail_url: "http://plo.vn/api/media.json?",
+		  detail_params: {
+            contentid: "post.id"
+          }
+        }
+      ]
+    },
+	{
+      name: "Kinh tế",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "cat_kinh_doanh",
+      provider_cf: [
+        {
+		  provider_id:"kinh_te",
+		  pid:"plo_home",
+		  group_id:"kinh_te",
+          url: "http://plo.vn/api/contents.json?zoneid=13&",
+		  page_var: "page",
+		  page_type: "normal,1",
+		  detail_url: "http://plo.vn/api/media.json?",
+		  detail_params: {
+            contentid: "post.id"
+          }
+        }
+      ]
+    },
+	{
+      name: "Bất động sản",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "cat_bat_dong_san",
+      provider_cf: [
+        {
+		  provider_id:"bat_dong_san",
+		  pid:"plo_home",
+		  group_id:"bat_dong_san",
+          url: "http://plo.vn/api/contents.json?zoneid=104&",
+		  page_var: "page",
+		  page_type: "normal,1",
+		  detail_url: "http://plo.vn/api/media.json?",
+		  detail_params: {
+            contentid: "post.id"
+          }
+        }
+      ]
+    },
+	{
+      name: "Văn hóa",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "cat_giai_tri",
+      provider_cf: [
+        {
+		  provider_id:"van_hoa",
+		  pid:"plo_home",
+		  group_id:"van_hoa",
+          url: "http://plo.vn/api/contents.json?zoneid=16&",
+		  page_var: "page",
+		  page_type: "normal,1",
+		  detail_url: "http://plo.vn/api/media.json?",
+		  detail_params: {
+            contentid: "post.id"
+          }
+        }
+      ]
+    },
+	{
+      name: "Thể thao",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "cat_the_thao",
+      provider_cf: [
+        {
+		  provider_id:"the_thao",
+		  pid:"plo_home",
+		  group_id:"the_thao",
+          url: "http://plo.vn/api/contents.json?zoneid=22&",
+		  page_var: "page",
+		  page_type: "normal,1",
+		  detail_url: "http://plo.vn/api/media.json?",
+		  detail_params: {
+            contentid: "post.id"
+          }
+        }
+      ]
+    },
+	{
+      name: "Đô thị",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "cat_do_thi",
+      provider_cf: [
+        {
+		  provider_id:"do_thi",
+		  pid:"plo_home",
+		  group_id:"do_thi",
+          url: "http://plo.vn/api/contents.json?zoneid=163&",
+		  page_var: "page",
+		  page_type: "normal,1",
+		  detail_url: "http://plo.vn/api/media.json?",
+		  detail_params: {
+            contentid: "post.id"
+          }
+        }
+      ]
+    },
+	{
+      name: "Bạn đọc",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "cat_tam_su",
+      provider_cf: [
+        {
+		  provider_id:"ban_doc",
+		  pid:"plo_home",
+		  group_id:"ban_doc",
+          url: "http://plo.vn/api/contents.json?zoneid=24&",
+		  page_var: "page",
+		  page_type: "normal,1",
+		  detail_url: "http://plo.vn/api/media.json?",
+		  detail_params: {
+            contentid: "post.id"
+          }
+        }
+      ]
+    },
+	{
+      name: "Thư giãn",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "cat_cuoi",
+      provider_cf: [
+        {
+		  provider_id:"thu_gian",
+		  pid:"plo_home",
+		  group_id:"thu_gian",
+          url: "http://plo.vn/api/contents.json?zoneid=36&",
+		  page_var: "page",
+		  page_type: "normal,1",
+		  detail_url: "http://plo.vn/api/media.json?",
+		  detail_params: {
+            contentid: "post.id"
+          }
+        }
+      ]
+    },
+	{
+      name: "Sống khỏe",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "cat_suc_khoe",
+      provider_cf: [
+        {
+		  provider_id:"song_khoe",
+		  pid:"plo_home",
+		  group_id:"song_khoe",
+          url: "http://plo.vn/api/contents.json?zoneid=157&",
+		  page_var: "page",
+		  page_type: "normal,1",
+		  detail_url: "http://plo.vn/api/media.json?",
+		  detail_params: {
+            contentid: "post.id"
+          }
+        }
+      ]
+    },
+	{
+      name: "Xe",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "cat_xe",
+      provider_cf: [
+        {
+		  provider_id:"xe",
+		  pid:"plo_home",
+		  group_id:"xe",
+          url: "http://plo.vn/api/contents.json?zoneid=37&",
+		  page_var: "page",
+		  page_type: "normal,1",
+		  detail_url: "http://plo.vn/api/media.json?",
+		  detail_params: {
+            contentid: "post.id"
+          }
+        }
+      ]
+    },
+	{
+      name: "Phóng sự",
+      type: 0,
+      use_char_icon: true,
+	  res_icon_name: "cat_phong_su",
+      provider_cf: [
+        {
+		  provider_id:"phong_su",
+		  pid:"plo_home",
+		  group_id:"phong_su",
+          url: "http://plo.vn/api/contents.json?zoneid=35&",
+		  page_var: "page",
+		  page_type: "normal,1",
+		  detail_url: "http://plo.vn/api/media.json?",
+		  detail_params: {
+            contentid: "post.id"
+          }
+        }
+      ]
+    }
+  ]
+}
