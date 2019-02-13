@@ -15,7 +15,7 @@
 			keyword:"pb_keyword"
 		  },
 		  page_type: "fixed",
-		  detail_url: "http://plo.vn/api/media.json?",
+		  detail_url: "https://plo.vn/api/media.json?",
 		  detail_params: {
             contentid: "post.id"
           }
@@ -35,7 +35,7 @@
           url: "https://plo.vn/api/contents.json?zoneid=0&",
           page_var: "page",
 		  page_type: "normal,1",
-		  detail_url: "http://plo.vn/api/media.json?",
+		  detail_url: "https://plo.vn/api/media.json?",
 		  detail_params: {
             contentid: "post.id"
           }
@@ -55,7 +55,7 @@
           url: "https://plo.vn/api/contents.json?zoneid=25&",
 		  page_var: "page",
 		  page_type: "normal,1",
-		  detail_url: "http://plo.vn/api/media.json?",
+		  detail_url: "https://plo.vn/api/media.json?",
 		  detail_params: {
             contentid: "post.id"
           }
@@ -75,7 +75,7 @@
           url: "https://plo.vn/api/contents.json?zoneid=1&",
 		  page_var: "page",
 		  page_type: "normal,1",
-		  detail_url: "http://plo.vn/api/media.json?",
+		  detail_url: "https://plo.vn/api/media.json?",
 		  detail_params: {
             contentid: "post.id"
           }
@@ -95,7 +95,7 @@
           url: "https://plo.vn/api/contents.json?zoneid=114&",
 		  page_var: "page",
 		  page_type: "normal,1",
-		  detail_url: "http://plo.vn/api/media.json?",
+		  detail_url: "https://plo.vn/api/media.json?",
 		  detail_params: {
             contentid: "post.id"
           }
@@ -115,7 +115,7 @@
           url: "https://plo.vn/api/contents.json?zoneid=8&",
 		  page_var: "page",
 		  page_type: "normal,1",
-		  detail_url: "http://plo.vn/api/media.json?",
+		  detail_url: "https://plo.vn/api/media.json?",
 		  detail_params: {
             contentid: "post.id"
           }
@@ -135,7 +135,7 @@
           url: "https://plo.vn/api/contents.json?zoneid=23&",
 		  page_var: "page",
 		  page_type: "normal,1",
-		  detail_url: "http://plo.vn/api/media.json?",
+		  detail_url: "https://plo.vn/api/media.json?",
 		  detail_params: {
             contentid: "post.id"
           }
@@ -155,7 +155,7 @@
           url: "https://plo.vn/api/contents.json?zoneid=3&",
 		  page_var: "page",
 		  page_type: "normal,1",
-		  detail_url: "http://plo.vn/api/media.json?",
+		  detail_url: "https://plo.vn/api/media.json?",
 		  detail_params: {
             contentid: "post.id"
           }
@@ -175,7 +175,7 @@
           url: "https://plo.vn/api/contents.json?zoneid=13&",
 		  page_var: "page",
 		  page_type: "normal,1",
-		  detail_url: "http://plo.vn/api/media.json?",
+		  detail_url: "https://plo.vn/api/media.json?",
 		  detail_params: {
             contentid: "post.id"
           }
@@ -195,7 +195,7 @@
           url: "https://plo.vn/api/contents.json?zoneid=104&",
 		  page_var: "page",
 		  page_type: "normal,1",
-		  detail_url: "http://plo.vn/api/media.json?",
+		  detail_url: "https://plo.vn/api/media.json?",
 		  detail_params: {
             contentid: "post.id"
           }
@@ -215,7 +215,7 @@
           url: "https://plo.vn/api/contents.json?zoneid=16&",
 		  page_var: "page",
 		  page_type: "normal,1",
-		  detail_url: "http://plo.vn/api/media.json?",
+		  detail_url: "https://plo.vn/api/media.json?",
 		  detail_params: {
             contentid: "post.id"
           }
@@ -235,7 +235,7 @@
           url: "https://plo.vn/api/contents.json?zoneid=22&",
 		  page_var: "page",
 		  page_type: "normal,1",
-		  detail_url: "http://plo.vn/api/media.json?",
+		  detail_url: "https://plo.vn/api/media.json?",
 		  detail_params: {
             contentid: "post.id"
           }
@@ -255,7 +255,7 @@
           url: "https://plo.vn/api/contents.json?zoneid=163&",
 		  page_var: "page",
 		  page_type: "normal,1",
-		  detail_url: "http://plo.vn/api/media.json?",
+		  detail_url: "https://plo.vn/api/media.json?",
 		  detail_params: {
             contentid: "post.id"
           }
@@ -275,7 +275,7 @@
           url: "https://plo.vn/api/contents.json?zoneid=24&",
 		  page_var: "page",
 		  page_type: "normal,1",
-		  detail_url: "http://plo.vn/api/media.json?",
+		  detail_url: "https://plo.vn/api/media.json?",
 		  detail_params: {
             contentid: "post.id"
           }
@@ -295,7 +295,7 @@
           url: "https://plo.vn/api/contents.json?zoneid=36&",
 		  page_var: "page",
 		  page_type: "normal,1",
-		  detail_url: "http://plo.vn/api/media.json?",
+		  detail_url: "https://plo.vn/api/media.json?",
 		  detail_params: {
             contentid: "post.id"
           }
@@ -315,7 +315,7 @@
           url: "https://plo.vn/api/contents.json?zoneid=157&",
 		  page_var: "page",
 		  page_type: "normal,1",
-		  detail_url: "http://plo.vn/api/media.json?",
+		  detail_url: "https://plo.vn/api/media.json?",
 		  detail_params: {
             contentid: "post.id"
           }
@@ -335,7 +335,7 @@
           url: "https://plo.vn/api/contents.json?zoneid=37&",
 		  page_var: "page",
 		  page_type: "normal,1",
-		  detail_url: "http://plo.vn/api/media.json?",
+		  detail_url: "https://plo.vn/api/media.json?",
 		  detail_params: {
             contentid: "post.id"
           }
@@ -355,7 +355,7 @@
           url: "https://plo.vn/api/contents.json?zoneid=35&",
 		  page_var: "page",
 		  page_type: "normal,1",
-		  detail_url: "http://plo.vn/api/media.json?",
+		  detail_url: "https://plo.vn/api/media.json?",
 		  detail_params: {
             contentid: "post.id"
           }
