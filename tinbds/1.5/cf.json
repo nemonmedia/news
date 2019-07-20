@@ -44,11 +44,11 @@
           provider_id: "cafef",
           pid: "n24_home",
           group_id: "cafef",
-          url: "https://api.5play.mobi/news/v4.0/articles?latest=0&sid=13&cid=3&count=30&",
+          url: "https://api.5play.mobi/news/v2.0/articles?latest=0&sid=13&cid=3&count=30&",
           page_var: "lid",
           page_type: "custom,0",
           detail_url: "",
-          related_url: "https://api.5play.mobi/news/v4.0/relativev2?lid={post.id}"
+          related_url: "https://api.5play.mobi/news/v2.0/relativev2?lid={post.id}"
         }
       ]
     },
@@ -63,11 +63,11 @@
           provider_id: "vneconomy",
           pid: "n24_home",
           group_id: "vneconomy",
-          url: "https://api.5play.mobi/news/v4.0/articles?latest=0&sid=12&cid=5&count=30&",
+          url: "https://api.5play.mobi/news/v2.0/articles?latest=0&sid=12&cid=5&count=30&",
           page_var: "lid",
           page_type: "custom,0",
           detail_url: "",
-          related_url: "https://api.5play.mobi/news/v4.0/relativev2?lid={post.id}"
+          related_url: "https://api.5play.mobi/news/v2.0/relativev2?lid={post.id}"
         }
       ]
     },
@@ -115,11 +115,11 @@
           provider_id: "nhanvat",
           pid: "n24_home",
           group_id: "nhanvat",
-          url: "https://api.5play.mobi/news/v4.0/articles?latest=0&sid=12&cid=4&count=30&",
+          url: "https://api.5play.mobi/news/v2.0/articles?latest=0&sid=12&cid=4&count=30&",
           page_var: "lid",
           page_type: "custom,0",
           detail_url: "",
-          related_url: "https://api.5play.mobi/news/v4.0/relativev2?lid={post.id}"
+          related_url: "https://api.5play.mobi/news/v2.0/relativev2?lid={post.id}"
         }
       ]
     },
