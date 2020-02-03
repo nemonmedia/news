@@ -20,7 +20,7 @@
     {
       name: "CafeF",
       type: 0,
-      enabled:true,
+      enabled: true,
       use_char_icon: true,
       res_icon_name: "char_CF",
       provider_cf: [
@@ -37,21 +37,23 @@
       ]
     },
     {
-      name: "VnEconomy",
+      name: "VnExpress",
       type: 0,
-      enabled:true,
+      enabled: true,
       use_char_icon: true,
-      res_icon_name: "char_VE",
+      res_icon_name: "char_VNE",
       provider_cf: [
         {
-          provider_id: "vneconomy",
-          pid: "n24_home",
-          group_id: "vneconomy",
-          url: "https://api.5play.mobi/news/v2.0/articles?latest=0&sid=12&cid=5&count=30&",
-          page_var: "lid",
-          page_type: "custom,0",
-          detail_url: "",
-          related_url: "https://api.5play.mobi/news/v2.0/relativev2?lid={post.id}"
+          provider_id: "vne",
+          pid: "vne_cate_bds",
+          group_id: "vne",
+          url: "https://api3.vnexpress.net/api/article?type=get_rule_2&select=article_id,article_type,original_cate,site_id,title,lead,share_url,thumbnail_url,privacy,publish_time,list_object_type&cate_id=1003181&limit=10&app_id=c31b32&",
+          page_var: "offset",
+          page_type: "offset,10",
+          detail_url: "https://api3.vnexpress.net/api/article?type=get_full&app_id=c31b32&option=seemore",
+          detail_params: {
+            article_id: "post.id"
+          }
         }
       ]
     },
@@ -59,7 +61,7 @@
       name: "Biz Tech",
       type: 0,
       use_char_icon: true,
-      res_icon_name: "cat_kinh_doanh",
+      res_icon_name: "cat_ai",
       provider_cf: [
         {
           provider_id: "ncdt_biz_tech",
@@ -90,8 +92,30 @@
       ]
     },
     {
+      name: "Chứng khoán",
+      type: 0,
+      enabled: true,
+      use_char_icon: true,
+      res_icon_name: "cat_kinh_doanh",
+      provider_cf: [
+        {
+          provider_id: "vne",
+          pid: "vne_cate_chungkhoan",
+          group_id: "vne",
+          url: "https://api3.vnexpress.net/api/article?type=get_rule_2&select=article_id,article_type,original_cate,site_id,title,lead,share_url,thumbnail_url,privacy,publish_time,list_object_type&cate_id=1003180&limit=10&app_id=c31b32&",
+          page_var: "offset",
+          page_type: "offset,10",
+          detail_url: "https://api3.vnexpress.net/api/article?type=get_full&app_id=c31b32&option=seemore",
+          detail_params: {
+            article_id: "post.id"
+          }
+        }
+      ]
+    },
+    {
       name: "Nhân vật",
       type: 0,
+      enabled: false,
       use_char_icon: true,
       res_icon_name: "cat_can_biet",
       provider_cf: [
@@ -141,5 +165,6 @@
         }
       ]
     },
+    
   ]
 }
