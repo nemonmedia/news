@@ -142,5 +142,49 @@
       video_strs: "listMp4",
       video_view_type: "a"
     }
+  },
+  vne_cate_bds: {
+    post_list: "$.data.1003181",
+    post: {
+      id: "article_id",
+      title: "title",
+      desc: "lead",
+      source: "share_url",
+      thumbSmall: "thumbnail_url",
+      thumbMedium: "thumbnail_url",
+      thumbBig: "thumbnail_url",
+      dateFormat: "L10",
+      createdDate: "publish_time",
+      updatedDate: "update_time"
+    },
+    detail: "$.data.content",
+    detail_image_list: "$.data.photos",
+    detail_image: {
+      id: "photo_id",
+      url: "thumbnail_url",
+      width: 0,
+      height: 0,
+      desc: "caption"
+    },
+    video_objs: "$.data.list_video",
+    detail_video: {
+      id: "video_id",
+      url: "url",
+      thumb: "thumbnail_url",
+      desc: "caption"
+    },
+    related_post_list: "$.data.list_reference_seemore",
+    related_post: {
+      id: "article_id",
+      title: "title",
+      desc: "lead",
+      source: "share_url",
+      thumbSmall: "thumbnail_url",
+      thumbMedium: "thumbnail_url",
+      thumbBig: "thumbnail_url",
+      dateFormat: "L10",
+      createdDate: "publish_time",
+      updatedDate: "update_time"
+    }
   }
 }
