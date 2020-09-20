@@ -18,7 +18,7 @@
         }
       ]
     },
-	{
+    {
       name: "Chứng khoán",
       type: 0,
       enabled: true,
@@ -39,7 +39,7 @@
         }
       ]
     },
-	{
+    {
       name: "Đầu tư",
       type: 0,
       enabled: true,
@@ -58,7 +58,7 @@
         }
       ]
     },
-	{
+    {
       name: "Quy Hoạch",
       type: 0,
       enabled: true,
@@ -74,6 +74,44 @@
           page_type: "custom,0",
           detail_url: "",
           related_url: "https://api.5play.mobi/news/v4.0/articles?latest=0&sid=162&cid=2&count=5&lid={post.id}"
+        }
+      ]
+    },
+    {
+      name: "Doanh Nhân",
+      type: 0,
+      enabled: true,
+      use_char_icon: true,
+      res_icon_name: "cat_can_biet",
+      provider_cf: [
+        {
+          provider_id: "doanhnhan",
+          pid: "n24_home",
+          group_id: "doanhnhan",
+          url: "https://api.5play.mobi/news/v4.0/articles?latest=0&sid=187&cid=4&count=30&",
+          page_var: "lid",
+          page_type: "custom,0",
+          detail_url: "",
+          related_url: "https://api.5play.mobi/news/v4.0/articles?latest=0&sid=187&cid=4&count=5&lid={post.id}"
+        }
+      ]
+    },
+    {
+      name: "Insight",
+      type: 0,
+      enabled: true,
+      use_char_icon: true,
+      res_icon_name: "cat_kham_pha",
+      provider_cf: [
+        {
+          provider_id: "insight",
+          pid: "n24_home",
+          group_id: "insight",
+          url: "https://api.5play.mobi/news/v4.0/articles?latest=0&sid=187&cid=1&count=30&",
+          page_var: "lid",
+          page_type: "custom,0",
+          detail_url: "",
+          related_url: "https://api.5play.mobi/news/v4.0/articles?latest=0&sid=187&cid=1&count=5&lid={post.id}"
         }
       ]
     },
@@ -133,7 +171,7 @@
         }
       ]
     },
-	{
+    {
       name: "CafeF",
       type: 0,
       enabled: true,
@@ -152,7 +190,7 @@
         }
       ]
     },
-	{
+    {
       name: "Tâm sự",
       type: 0,
       enabled: true,
