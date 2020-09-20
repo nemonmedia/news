@@ -8,31 +8,72 @@
       provider_cf: [
         {
           provider_id: "ncdt_nen_doc",
-          pid: "ncdt",
-          group_id: "nen_doc",
-          url: "http://serviceapps.nhipcaudautu.vn/galaxyservice.svc/subjectdetailByFolder/0-{pgpage}",
-          page_var: "page",
-          page_type: "normal,1",
-          detail_url: "http://serviceapps.nhipcaudautu.vn/galaxyservice.svc/subjectdetail/{post.id}"
-        }
-      ]
-    },
-    {
-      name: "CafeF",
-      type: 0,
-      enabled: true,
-      use_char_icon: true,
-      res_icon_name: "char_CF",
-      provider_cf: [
-        {
-          provider_id: "cafef",
           pid: "n24_home",
-          group_id: "cafef",
-          url: "https://api.5play.mobi/news/v4.0/articles?latest=0&sid=13&cid=3&count=30&",
+          group_id: "nen_doc",
+          url: "https://api.5play.mobi/news/v4.0/articles?latest=0&sid=32&cid=2&count=30&",
           page_var: "lid",
           page_type: "custom,0",
           detail_url: "",
-          related_url: "https://api.5play.mobi/news/v4.0/articles?latest=0&sid=13&cid=3&count=5&lid={post.id}"
+          related_url: "https://api.5play.mobi/news/v4.0/articles?latest=0&sid=32&cid=2&count=5&lid={post.id}"
+        }
+      ]
+    },
+	{
+      name: "Chứng khoán",
+      type: 0,
+      enabled: true,
+      use_char_icon: true,
+      res_icon_name: "cat_kinh_doanh",
+      provider_cf: [
+        {
+          provider_id: "vne",
+          pid: "vne_cate_chungkhoan",
+          group_id: "vne",
+          url: "https://api3.vnexpress.net/api/article?type=get_rule_2&select=article_id,article_type,original_cate,site_id,title,lead,share_url,thumbnail_url,privacy,publish_time,list_object_type&cate_id=1003180&limit=10&app_id=c31b32&",
+          page_var: "offset",
+          page_type: "offset,10",
+          detail_url: "https://api3.vnexpress.net/api/article?type=get_full&app_id=c31b32&option=seemore",
+          detail_params: {
+            article_id: "post.id"
+          }
+        }
+      ]
+    },
+	{
+      name: "Đầu tư",
+      type: 0,
+      enabled: true,
+      use_char_icon: true,
+      res_icon_name: "cat_tien_te",
+      provider_cf: [
+        {
+          provider_id: "dautu",
+          pid: "n24_home",
+          group_id: "dautu",
+          url: "https://api.5play.mobi/news/v4.0/articles?latest=0&sid=162&cid=1&count=30&",
+          page_var: "lid",
+          page_type: "custom,0",
+          detail_url: "",
+          related_url: "https://api.5play.mobi/news/v4.0/articles?latest=0&sid=162&cid=1&count=5&lid={post.id}"
+        }
+      ]
+    },
+	{
+      name: "Quy Hoạch",
+      type: 0,
+      enabled: true,
+      use_char_icon: true,
+      res_icon_name: "cat_do_thi",
+      provider_cf: [
+        {
+          provider_id: "quyhoach",
+          pid: "n24_home",
+          group_id: "quyhoach",
+          url: "https://api.5play.mobi/news/v4.0/articles?latest=0&sid=162&cid=2&count=30&",
+          page_var: "lid",
+          page_type: "custom,0",
+          detail_url: "",
+          related_url: "https://api.5play.mobi/news/v4.0/articles?latest=0&sid=162&cid=2&count=5&lid={post.id}"
         }
       ]
     },
@@ -58,113 +99,77 @@
       ]
     },
     {
-      name: "Biz Tech",
+      name: "VietNamNet",
       type: 0,
       use_char_icon: true,
-      res_icon_name: "cat_ai",
+      res_icon_name: "char_VNN",
       provider_cf: [
         {
-          provider_id: "ncdt_biz_tech",
-          pid: "ncdt",
-          group_id: "biz_tech",
-          url: "http://serviceapps.nhipcaudautu.vn/galaxyservice.svc/subjectdetailByFolder/30063-{pgpage}",
-          page_var: "page",
+          provider_id: "ncdt_nd",
+          pid: "vnn",
+          group_id: "vnn",
+          url: "https://vietnamnet.vn/jsx/category/?c=bat-dong-san&",
+          page_var: "p",
           page_type: "normal,1",
-          detail_url: "http://serviceapps.nhipcaudautu.vn/galaxyservice.svc/subjectdetail/{post.id}"
+          detail_url: "https://vietnamnet.vn/jsx/detail/?a={post.id}"
         }
       ]
     },
     {
-      name: "Đầu tư",
+      name: "24H",
       type: 0,
       use_char_icon: true,
-      res_icon_name: "cat_chuyen_nhuong",
+      res_icon_name: "char_24H",
       provider_cf: [
         {
-          provider_id: "ncdt_dau_tu",
-          pid: "ncdt",
-          group_id: "dau_tu",
-          url: "http://serviceapps.nhipcaudautu.vn/galaxyservice.svc/subjectdetailByFolder/30061-{pgpage}",
-          page_var: "page",
-          page_type: "normal,1",
-          detail_url: "http://serviceapps.nhipcaudautu.vn/galaxyservice.svc/subjectdetail/{post.id}"
-        }
-      ]
-    },
-    {
-      name: "Chứng khoán",
-      type: 0,
-      enabled: true,
-      use_char_icon: true,
-      res_icon_name: "cat_kinh_doanh",
-      provider_cf: [
-        {
-          provider_id: "vne",
-          pid: "vne_cate_chungkhoan",
-          group_id: "vne",
-          url: "https://api3.vnexpress.net/api/article?type=get_rule_2&select=article_id,article_type,original_cate,site_id,title,lead,share_url,thumbnail_url,privacy,publish_time,list_object_type&cate_id=1003180&limit=10&app_id=c31b32&",
-          page_var: "offset",
-          page_type: "offset,10",
-          detail_url: "https://api3.vnexpress.net/api/article?type=get_full&app_id=c31b32&option=seemore",
-          detail_params: {
-            article_id: "post.id"
-          }
-        }
-      ]
-    },
-    {
-      name: "Nhân vật",
-      type: 0,
-      enabled: false,
-      use_char_icon: true,
-      res_icon_name: "cat_can_biet",
-      provider_cf: [
-        {
-          provider_id: "nhanvat",
+          provider_id: "ncdt_startup",
           pid: "n24_home",
-          group_id: "nhanvat",
-          url: "https://api.5play.mobi/news/v2.0/articles?latest=0&sid=12&cid=4&count=30&",
+          group_id: "biz_tech",
+          url: "https://api.5play.mobi/news/v4.0/articles?latest=0&sid=3&cid=7&count=30&",
           page_var: "lid",
           page_type: "custom,0",
           detail_url: "",
-          related_url: "https://api.5play.mobi/news/v2.0/relativev2?lid={post.id}"
+          related_url: "https://api.5play.mobi/news/v4.0/articles?latest=0&sid=3&cid=7&count=5&lid={post.id}"
         }
       ]
     },
-    {
-      name: "Chuyên đề",
+	{
+      name: "CafeF",
       type: 0,
+      enabled: true,
+      use_char_icon: true,
+      res_icon_name: "char_CF",
+      provider_cf: [
+        {
+          provider_id: "cafef",
+          pid: "n24_home",
+          group_id: "cafef",
+          url: "https://api.5play.mobi/news/v4.0/articles?latest=0&sid=13&cid=3&count=30&",
+          page_var: "lid",
+          page_type: "custom,0",
+          detail_url: "",
+          related_url: "https://api.5play.mobi/news/v4.0/articles?latest=0&sid=13&cid=3&count=5&lid={post.id}"
+        }
+      ]
+    },
+	{
+      name: "Tâm sự",
+      type: 0,
+      enabled: true,
       use_char_icon: true,
       res_icon_name: "cat_tam_su",
       provider_cf: [
         {
-          provider_id: "ncdt_nd",
-          pid: "ncdt",
-          group_id: "cd",
-          url: "http://serviceapps.nhipcaudautu.vn/galaxyservice.svc/subjectdetailByFolder/30069-{pgpage}",
-          page_var: "page",
-          page_type: "normal,1",
-          detail_url: "http://serviceapps.nhipcaudautu.vn/galaxyservice.svc/subjectdetail/{post.id}"
+          provider_id: "tamsu",
+          pid: "n24_home",
+          group_id: "tamsu",
+          url: "https://api.5play.mobi/news/v4.0/articles?latest=0&sid=162&cid=3&count=30&",
+          page_var: "lid",
+          page_type: "custom,0",
+          detail_url: "",
+          related_url: "https://api.5play.mobi/news/v4.0/articles?latest=0&sid=162&cid=3&count=5&lid={post.id}"
         }
       ]
-    },
-    {
-      name: "Khởi nghiệp",
-      type: 0,
-      use_char_icon: true,
-      res_icon_name: "cat_sang_tao",
-      provider_cf: [
-        {
-          provider_id: "ncdt_startup",
-          pid: "ncdt",
-          group_id: "biz_tech",
-          url: "http://serviceapps.nhipcaudautu.vn/galaxyservice.svc/subjectdetailByFolder/30066-{pgpage}",
-          page_var: "page",
-          page_type: "normal,1",
-          detail_url: "http://serviceapps.nhipcaudautu.vn/galaxyservice.svc/subjectdetail/{post.id}"
-        }
-      ]
-    },
-    
+    }
   ]
 }
