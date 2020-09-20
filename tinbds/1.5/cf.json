@@ -44,7 +44,7 @@
       type: 0,
       enabled: true,
       use_char_icon: true,
-      res_icon_name: "cat_tien_te",
+      res_icon_name: "cat_chuyen_nhuong",
       provider_cf: [
         {
           provider_id: "dautu",
