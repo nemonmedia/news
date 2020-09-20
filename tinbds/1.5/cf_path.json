@@ -230,5 +230,25 @@
       createdDate: "publish_time",
       updatedDate: "update_time"
     }
+  },
+  vnn: {
+    post_list: "$.articles",
+    post: {
+      id: "aid",
+      title: "title",
+      desc: "lead",
+      source: "link",
+      thumbSmall: "image",
+      thumbMedium: "image",
+      thumbBig: "image",
+      dateFormat: "dd/MM/yyyy",
+      dateTimeZone: "GMT+7",
+      createdDate: "publishtime",
+      updatedDate: "publishtime",
+      display_date: "publishtime"
+    },
+    resolve_global_data: "jRemove_retvar =",
+    resolve_detail_data: "stripHtml,jRemove_https://vnn-imgs-f.vgcloud.vn/logo.gif",
+    detail: "$.articles[0].detail"
   }
 }
