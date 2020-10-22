@@ -232,7 +232,7 @@
     }
   },
   vne_cate_startup: {
-    post_list: "$.data.1004594",
+    post_list: "$.data.1004063",
     post: {
       id: "article_id",
       title: "title",
