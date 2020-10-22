@@ -116,6 +116,27 @@
       ]
     },
     {
+      name: "Startup",
+      type: 0,
+      enabled: true,
+      use_char_icon: true,
+      res_icon_name: "char_S",
+      provider_cf: [
+        {
+          provider_id: "vne_s",
+          pid: "vne_cate_startup",
+          group_id: "vne_s",
+          url: "https://api3.vnexpress.net/api/article?type=get_rule_2&select=article_id,article_type,original_cate,site_id,title,lead,share_url,thumbnail_url,privacy,publish_time,list_object_type&cate_id=1004594&limit=10&app_id=c31b32&",
+          page_var: "offset",
+          page_type: "offset,10",
+          detail_url: "https://api3.vnexpress.net/api/article?type=get_full&app_id=c31b32&option=seemore",
+          detail_params: {
+            article_id: "post.id"
+          }
+        }
+      ]
+    },
+    {
       name: "VnExpress",
       type: 0,
       enabled: true,
