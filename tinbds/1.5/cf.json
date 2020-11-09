@@ -10,11 +10,11 @@
           provider_id: "ncdt_nen_doc",
           pid: "n24_home",
           group_id: "nen_doc",
-          url: "https://api.5play.mobi/news/v4.0/articles?latest=0&sid=32&cid=2&count=30&",
+          url: "https://api.5play.mobi/news/v4.0/articles?latest=0&sid=162&cid=2&count=30&",
           page_var: "lid",
           page_type: "custom,0",
           detail_url: "",
-          related_url: "https://api.5play.mobi/news/v4.0/articles?latest=0&sid=32&cid=2&count=5&lid={post.id}"
+          related_url: "https://api.5play.mobi/news/v4.0/articles?latest=0&sid=162&cid=2&count=5&lid={post.id}"
         }
       ]
     },
