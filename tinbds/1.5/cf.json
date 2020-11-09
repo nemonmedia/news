@@ -42,7 +42,7 @@
     {
       name: "Đầu tư",
       type: 0,
-      enabled: true,
+      enabled: false,
       use_char_icon: true,
       res_icon_name: "cat_chuyen_nhuong",
       provider_cf: [
