@@ -212,21 +212,22 @@
       ]
     },
     {
-      name: "Phong Thủy",
-      type: 0,
-      enabled: true,
+      name: "Thông báo",
+      type: 2000,
       use_char_icon: true,
-      res_icon_name: "cat_phong_thuy",
+      res_icon_name: "cat_ic_info",
       provider_cf: [
         {
-          provider_id: "tamsu",
-          pid: "n24_home",
-          group_id: "tamsu",
-          url: "https://api.5play.mobi/news/v4.0/articles?latest=0&sid=162&cid=5&count=30&",
-          page_var: "lid",
-          page_type: "custom,0",
+          provider_id: "com.andatsoft.app.newz",
+          pid: "plo_home",
+          group_id: "trang_chu",
+          url: "",
+          page_var: "page",
+          page_type: "normal,1",
           detail_url: "",
-          related_url: "https://api.5play.mobi/news/v4.0/articles?latest=0&sid=162&cid=5&count=5&lid={post.id}"
+          detail_params: {
+            contentid: "post.id"
+          }
         }
       ]
     }
