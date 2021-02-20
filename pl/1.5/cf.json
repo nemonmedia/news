@@ -361,6 +361,26 @@
           }
         }
       ]
+    },
+	  {
+      name: "Thông báo",
+      type: 2000,
+      use_char_icon: true,
+      res_icon_name: "cat_ic_info",
+      provider_cf: [
+        {
+          provider_id: "com.andatsoft.app.newz",
+          pid: "plo_home",
+          group_id: "trang_chu",
+          url: "",
+          page_var: "page",
+          page_type: "normal,1",
+          detail_url: "",
+          detail_params: {
+            contentid: "post.id"
+          }
+        }
+      ]
     }
   ]
 }
