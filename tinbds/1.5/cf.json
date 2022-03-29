@@ -60,24 +60,6 @@
       ]
     },
     {
-      name: "Đầu tư",
-      type: 0,
-      use_char_icon: true,
-      res_icon_name: "cat_chuyen_nhuong",
-      provider_cf: [
-        {
-          provider_id: "dautu",
-          pid: "n24_home",
-          group_id: "dautu",
-          url: "https://api.5play.mobi/news/v4.0/articles?latest=0&sid=162&cid=999&count=30&",
-          page_var: "lid",
-          page_type: "custom,0",
-          detail_url: "",
-          related_url: "https://api.5play.mobi/news/v4.0/articles?latest=0&sid=162&cid=999&count=5&lid={post.id}"
-        }
-      ]
-    },
-    {
       name: "Doanh Nhân",
       type: 0,
       enabled: true,
@@ -150,6 +132,24 @@
           page_var: "p",
           page_type: "normal,1",
           detail_url: "https://vietnamnet.vn/jsx/detail/?a={post.id}"
+        }
+      ]
+    },
+    {
+      name: "VnEconomy",
+      type: 0,
+      use_char_icon: true,
+      res_icon_name: "char_E",
+      provider_cf: [
+        {
+          provider_id: "vneconomy",
+          pid: "n24_home",
+          group_id: "vneconomy",
+          url: "https://api.5play.mobi/news/v4.0/articles?latest=0&sid=12&cid=3&count=30&",
+          page_var: "lid",
+          page_type: "custom,0",
+          detail_url: "",
+          related_url: "https://api.5play.mobi/news/v4.0/articles?latest=0&sid=12&cid=3&count=5&lid={post.id}"
         }
       ]
     },
@@ -230,7 +230,6 @@
     {
       name: "VnBusiness",
       type: 0,
-      enabled: false,
       use_char_icon: true,
       res_icon_name: "char_VnB",
       provider_cf: [
