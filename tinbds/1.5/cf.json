@@ -11,11 +11,11 @@
           provider_id: "ncdt_nen_doc",
           pid: "n24_home",
           group_id: "nen_doc",
-          url: "https://api.5play.mobi/news/v4.0/articles?latest=0&sid=85&cid=999&count=30&",
+          url: "https://api.5play.mobi/news/v4.0/articles?latest=0&sid=3&cid=7&count=30&",
           page_var: "lid",
           page_type: "custom,0",
           detail_url: "",
-          related_url: "https://api.5play.mobi/news/v4.0/articles?latest=0&sid=85&cid=999&count=5&lid={post.id}"
+          related_url: "https://api.5play.mobi/news/v4.0/articles?latest=0&sid=3&cid=7&count=5&lid={post.id}"
         }
       ]
     },
@@ -43,7 +43,7 @@
     {
       name: "Quy Hoạch",
       type: 0,
-      enabled: true,
+      enabled: false,
       use_char_icon: true,
       res_icon_name: "cat_do_thi",
       provider_cf: [
@@ -62,7 +62,7 @@
     {
       name: "Doanh Nhân",
       type: 0,
-      enabled: true,
+      enabled: false,
       use_char_icon: true,
       res_icon_name: "cat_can_biet",
       provider_cf: [
@@ -81,7 +81,7 @@
     {
       name: "Diễn Đàn",
       type: 0,
-      enabled: true,
+      enabled: false,
       use_char_icon: true,
       res_icon_name: "cat_tam_su",
       provider_cf: [
@@ -136,20 +136,20 @@
       ]
     },
     {
-      name: "VnEconomy",
+      name: "Thời báo Ngân Hàng",
       type: 0,
       use_char_icon: true,
-      res_icon_name: "char_E",
+      res_icon_name: "char_NH",
       provider_cf: [
         {
-          provider_id: "vneconomy",
+          provider_id: "tbnh",
           pid: "n24_home",
-          group_id: "vneconomy",
-          url: "https://api.5play.mobi/news/v4.0/articles?latest=0&sid=12&cid=3&count=30&",
+          group_id: "tbnh",
+          url: "https://api.5play.mobi/news/v4.0/articles?latest=0&sid=261&cid=2&count=30&",
           page_var: "lid",
           page_type: "custom,0",
           detail_url: "",
-          related_url: "https://api.5play.mobi/news/v4.0/articles?latest=0&sid=12&cid=3&count=5&lid={post.id}"
+          related_url: "https://api.5play.mobi/news/v4.0/articles?latest=0&sid=261&cid=2&count=5&lid={post.id}"
         }
       ]
     },
@@ -190,21 +190,21 @@
       ]
     },
     {
-      name: "Báo Đấu Thầu",
+      name: "Dân Việt",
       type: 0,
       enabled: true,
       use_char_icon: true,
-      res_icon_name: "char_DT",
+      res_icon_name: "char_DV",
       provider_cf: [
         {
           provider_id: "insight",
           pid: "n24_home",
           group_id: "insight",
-          url: "https://api.5play.mobi/news/v4.0/articles?latest=0&sid=242&cid=2&count=30&",
+          url: "https://api.5play.mobi/news/v4.0/articles?latest=0&sid=75&cid=18&count=30&",
           page_var: "lid",
           page_type: "custom,0",
           detail_url: "",
-          related_url: "https://api.5play.mobi/news/v4.0/articles?latest=0&sid=242&cid=2&count=5&lid={post.id}"
+          related_url: "https://api.5play.mobi/news/v4.0/articles?latest=0&sid=75&cid=18&count=5&lid={post.id}"
         }
       ]
     },
@@ -228,27 +228,26 @@
       ]
     },
     {
-      name: "VnBusiness",
+      name: "KTCK",
       type: 0,
       use_char_icon: true,
-      res_icon_name: "char_VnB",
+      res_icon_name: "char_KC",
       provider_cf: [
         {
-          provider_id: "vnb",
+          provider_id: "ktck",
           pid: "n24_home",
-          group_id: "vnb",
-          url: "https://api.5play.mobi/news/v4.0/articles?latest=0&sid=260&cid=5&count=30&",
+          group_id: "ktck",
+          url: "https://api.5play.mobi/news/v4.0/articles?latest=0&sid=252&cid=999&count=30&",
           page_var: "lid",
           page_type: "custom,0",
           detail_url: "",
-          related_url: "https://api.5play.mobi/news/v4.0/articles?latest=0&sid=260&cid=5&count=5&lid={post.id}"
+          related_url: "https://api.5play.mobi/news/v4.0/articles?latest=0&sid=252&cid=999&count=5&lid={post.id}"
         }
       ]
     },
     {
       name: "Cung Cầu",
       type: 0,
-      enabled: false,
       use_char_icon: true,
       res_icon_name: "char_CC",
       provider_cf: [
